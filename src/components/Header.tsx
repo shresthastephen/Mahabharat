@@ -1,9 +1,16 @@
 
 import { useState } from 'react';
 import { Menu, X, MapPin, Phone } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const handleOrderNow = () => {
+    navigate('/order');
+    setIsMenuOpen(false);
+  };
 
   return (
     <header className="bg-white shadow-lg sticky top-0 z-50">
@@ -53,7 +60,10 @@ const Header = () => {
             <a href="#contact" className="text-gray-700 hover:text-emerald-600 font-medium transition-colors">
               Contact
             </a>
-            <button className="bg-emerald-600 text-white px-6 py-2 rounded-full hover:bg-emerald-700 transition-colors font-medium">
+            <button 
+              onClick={handleOrderNow}
+              className="bg-emerald-600 text-white px-6 py-2 rounded-full hover:bg-emerald-700 transition-colors font-medium"
+            >
               Order Now
             </button>
           </div>
@@ -76,7 +86,10 @@ const Header = () => {
               <a href="#branches" className="text-gray-700 hover:text-emerald-600 font-medium">Branches</a>
               <a href="#about" className="text-gray-700 hover:text-emerald-600 font-medium">About Us</a>
               <a href="#contact" className="text-gray-700 hover:text-emerald-600 font-medium">Contact</a>
-              <button className="bg-emerald-600 text-white px-6 py-2 rounded-full w-fit font-medium">
+              <button 
+                onClick={handleOrderNow}
+                className="bg-emerald-600 text-white px-6 py-2 rounded-full w-fit font-medium"
+              >
                 Order Now
               </button>
             </div>

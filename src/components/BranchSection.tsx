@@ -1,7 +1,10 @@
 
 import { MapPin, Phone, Clock } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const BranchSection = () => {
+  const navigate = useNavigate();
+
   const branches = [
     {
       id: 1,
@@ -10,7 +13,8 @@ const BranchSection = () => {
       phone: "+977-1-4567890",
       image: "https://images.unsplash.com/photo-1460574283810-2aab119d8511?w=400&h=300&fit=crop",
       hours: "10:00 AM - 10:00 PM",
-      isMain: true
+      isMain: true,
+      route: "/branch/thamel"
     },
     {
       id: 2,
@@ -19,7 +23,8 @@ const BranchSection = () => {
       phone: "+977-1-4567891",
       image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&h=300&fit=crop",
       hours: "10:00 AM - 9:30 PM",
-      isMain: false
+      isMain: false,
+      route: "/branch/patan"
     },
     {
       id: 3,
@@ -28,7 +33,8 @@ const BranchSection = () => {
       phone: "+977-1-4567892",
       image: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=400&h=300&fit=crop",
       hours: "11:00 AM - 9:00 PM",
-      isMain: false
+      isMain: false,
+      route: "/branch/bhaktapur"
     },
     {
       id: 4,
@@ -37,9 +43,14 @@ const BranchSection = () => {
       phone: "+977-61-567893", 
       image: "https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?w=400&h=300&fit=crop",
       hours: "10:30 AM - 9:30 PM",
-      isMain: false
+      isMain: false,
+      route: "/branch/pokhara"
     }
   ];
+
+  const handleBranchClick = (route: string) => {
+    navigate(route);
+  };
 
   return (
     <section id="branches" className="py-20 bg-gradient-to-br from-emerald-50 to-teal-50">
@@ -55,7 +66,11 @@ const BranchSection = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {branches.map((branch) => (
-            <div key={branch.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 relative">
+            <div 
+              key={branch.id} 
+              onClick={() => handleBranchClick(branch.route)}
+              className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 relative cursor-pointer"
+            >
               {branch.isMain && (
                 <div className="absolute top-4 left-4 bg-emerald-600 text-white px-3 py-1 rounded-full text-sm font-semibold z-10">
                   Main Branch
@@ -93,7 +108,7 @@ const BranchSection = () => {
                 
                 <div className="mt-4 pt-4 border-t border-gray-100">
                   <button className="w-full bg-emerald-600 text-white px-4 py-2 rounded-lg hover:bg-emerald-700 transition-colors font-medium">
-                    Get Directions
+                    View Details
                   </button>
                 </div>
               </div>

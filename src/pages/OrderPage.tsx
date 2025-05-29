@@ -1,0 +1,191 @@
+
+import { ArrowLeft, MapPin, Phone, Clock, ShoppingBag } from 'lucide-react';
+import { Link } from 'react-router-dom';
+
+const OrderPage = () => {
+  const branches = [
+    {
+      id: 1,
+      name: "Thamel Branch",
+      location: "Thamel, Kathmandu",
+      phone: "+977-1-4567890",
+      image: "https://images.unsplash.com/photo-1460574283810-2aab119d8511?w=400&h=300&fit=crop",
+      hours: "10:00 AM - 10:00 PM",
+      isMain: true,
+      deliveryTime: "25-35 mins",
+      minOrder: "Rs. 300"
+    },
+    {
+      id: 2,
+      name: "Patan Branch", 
+      location: "Jawalakhel, Patan",
+      phone: "+977-1-4567891",
+      image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&h=300&fit=crop",
+      hours: "10:00 AM - 9:30 PM",
+      isMain: false,
+      deliveryTime: "30-40 mins",
+      minOrder: "Rs. 250"
+    },
+    {
+      id: 3,
+      name: "Bhaktapur Branch",
+      location: "Durbar Square, Bhaktapur", 
+      phone: "+977-1-4567892",
+      image: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=400&h=300&fit=crop",
+      hours: "11:00 AM - 9:00 PM",
+      isMain: false,
+      deliveryTime: "35-45 mins",
+      minOrder: "Rs. 350"
+    },
+    {
+      id: 4,
+      name: "Pokhara Branch",
+      location: "Lakeside, Pokhara",
+      phone: "+977-61-567893", 
+      image: "https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?w=400&h=300&fit=crop",
+      hours: "10:30 AM - 9:30 PM",
+      isMain: false,
+      deliveryTime: "20-30 mins",
+      minOrder: "Rs. 280"
+    }
+  ];
+
+  return (
+    <div className="min-h-screen bg-gray-50">
+      {/* Header */}
+      <div className="bg-white shadow-sm">
+        <div className="container mx-auto px-4 py-4">
+          <Link to="/" className="flex items-center gap-2 text-emerald-600 hover:text-emerald-700">
+            <ArrowLeft size={20} />
+            <span>Back to Home</span>
+          </Link>
+        </div>
+      </div>
+
+      {/* Hero Section */}
+      <section className="bg-gradient-to-r from-emerald-600 to-teal-600 text-white py-16">
+        <div className="container mx-auto px-4 text-center">
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <ShoppingBag size={32} />
+            <h1 className="text-4xl md:text-5xl font-bold">Order From Our Branches</h1>
+          </div>
+          <p className="text-xl text-emerald-100 max-w-2xl mx-auto">
+            Choose your nearest location and get fresh, hot momos delivered to your doorstep
+          </p>
+        </div>
+      </section>
+
+      {/* Branches Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Select Your Branch</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              All our branches serve the same authentic recipes with fresh ingredients and fast delivery
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {branches.map((branch) => (
+              <div key={branch.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 relative">
+                {branch.isMain && (
+                  <div className="absolute top-4 left-4 bg-yellow-400 text-gray-800 px-3 py-1 rounded-full text-sm font-semibold z-10">
+                    Main Branch
+                  </div>
+                )}
+                
+                <div className="relative">
+                  <img
+                    src={branch.image}
+                    alt={branch.name}
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                </div>
+                
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold text-gray-800 mb-4">{branch.name}</h3>
+                  
+                  <div className="space-y-3 mb-6">
+                    <div className="flex items-start gap-2">
+                      <MapPin className="text-emerald-600 mt-1 flex-shrink-0" size={16} />
+                      <span className="text-gray-600">{branch.location}</span>
+                    </div>
+                    
+                    <div className="flex items-center gap-2">
+                      <Phone className="text-emerald-600 flex-shrink-0" size={16} />
+                      <span className="text-gray-600">{branch.phone}</span>
+                    </div>
+                    
+                    <div className="flex items-center gap-2">
+                      <Clock className="text-emerald-600 flex-shrink-0" size={16} />
+                      <span className="text-gray-600">{branch.hours}</span>
+                    </div>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-4 mb-6 p-4 bg-gray-50 rounded-lg">
+                    <div className="text-center">
+                      <div className="text-sm text-gray-500">Delivery Time</div>
+                      <div className="font-semibold text-emerald-600">{branch.deliveryTime}</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-sm text-gray-500">Min Order</div>
+                      <div className="font-semibold text-emerald-600">{branch.minOrder}</div>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-3">
+                    <button className="w-full bg-emerald-600 text-white px-6 py-3 rounded-lg hover:bg-emerald-700 transition-colors font-semibold">
+                      Order Now - Delivery
+                    </button>
+                    <button className="w-full border-2 border-emerald-600 text-emerald-600 px-6 py-3 rounded-lg hover:bg-emerald-600 hover:text-white transition-colors font-semibold">
+                      Order Now - Pickup
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Info Section */}
+      <section className="py-16 bg-emerald-600 text-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">Why Order From Us?</h2>
+            <p className="text-emerald-100 max-w-2xl mx-auto">
+              We ensure the highest quality and fastest delivery for all our customers
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="bg-emerald-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Clock size={24} />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Fast Delivery</h3>
+              <p className="text-emerald-100">Fresh momos delivered hot to your doorstep in 30 minutes or less</p>
+            </div>
+            <div className="text-center">
+              <div className="bg-emerald-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <ShoppingBag size={24} />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Quality Guaranteed</h3>
+              <p className="text-emerald-100">Same authentic taste and quality from all our branches</p>
+            </div>
+            <div className="text-center">
+              <div className="bg-emerald-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Phone size={24} />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Easy Ordering</h3>
+              <p className="text-emerald-100">Simple online ordering system with real-time tracking</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default OrderPage;

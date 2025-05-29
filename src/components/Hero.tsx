@@ -1,7 +1,14 @@
 
 import { ArrowRight, Star } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
+  const navigate = useNavigate();
+
+  const handleOrderNow = () => {
+    navigate('/order');
+  };
+
   return (
     <section id="home" className="relative bg-gradient-to-r from-emerald-600 via-emerald-700 to-teal-600 text-white overflow-hidden">
       {/* Background pattern */}
@@ -31,7 +38,10 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-white text-emerald-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-colors flex items-center gap-2 justify-center">
+              <button 
+                onClick={handleOrderNow}
+                className="bg-white text-emerald-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-colors flex items-center gap-2 justify-center"
+              >
                 Order Now
                 <ArrowRight size={20} />
               </button>
