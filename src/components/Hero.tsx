@@ -1,0 +1,89 @@
+
+import { ArrowRight, Star } from 'lucide-react';
+
+const Hero = () => {
+  return (
+    <section id="home" className="relative bg-gradient-to-r from-red-600 via-red-700 to-orange-600 text-white overflow-hidden">
+      {/* Background pattern */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+        }} />
+      </div>
+
+      <div className="container mx-auto px-4 py-20 relative z-10">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Left content */}
+          <div className="space-y-8">
+            <div className="flex items-center gap-2 text-orange-200">
+              <Star className="fill-current" size={20} />
+              <span className="text-sm font-medium">Authentic Nepalese Cuisine</span>
+            </div>
+            
+            <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+              Taste the 
+              <span className="block text-orange-300">Authentic</span>
+              <span className="block">Momos</span>
+            </h1>
+            
+            <p className="text-xl text-red-100 leading-relaxed max-w-lg">
+              Experience the rich flavors of traditional Nepalese momos, handcrafted with love and served fresh from our kitchen to your table.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4">
+              <button className="bg-white text-red-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-colors flex items-center gap-2 justify-center">
+                Order Now
+                <ArrowRight size={20} />
+              </button>
+              <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-red-600 transition-colors">
+                View Menu
+              </button>
+            </div>
+            
+            <div className="flex items-center gap-8 pt-4">
+              <div className="text-center">
+                <div className="text-3xl font-bold">500+</div>
+                <div className="text-red-200 text-sm">Happy Customers</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold">15+</div>
+                <div className="text-red-200 text-sm">Momo Varieties</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold">4.9</div>
+                <div className="text-red-200 text-sm">Rating</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right content - Image */}
+          <div className="relative">
+            <div className="relative z-10 transform rotate-3 hover:rotate-0 transition-transform duration-300">
+              <div className="bg-white rounded-3xl p-8 shadow-2xl">
+                <img 
+                  src="https://images.unsplash.com/photo-1496412705862-e0088f16f791?w=500&h=400&fit=crop"
+                  alt="Delicious Momos"
+                  className="w-full h-80 object-cover rounded-2xl"
+                />
+                <div className="mt-4 text-center">
+                  <h3 className="text-2xl font-bold text-gray-800">Steamed Momos</h3>
+                  <p className="text-gray-600">Fresh • Authentic • Delicious</p>
+                </div>
+              </div>
+            </div>
+            
+            {/* Floating elements */}
+            <div className="absolute -top-4 -right-4 bg-orange-400 text-white px-4 py-2 rounded-full text-sm font-semibold animate-bounce">
+              Hot & Fresh! 🔥
+            </div>
+            <div className="absolute -bottom-4 -left-4 bg-yellow-400 text-gray-800 px-4 py-2 rounded-full text-sm font-semibold">
+              Rs. 180 only
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
