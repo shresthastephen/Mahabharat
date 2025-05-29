@@ -1,6 +1,7 @@
-
 import { ArrowLeft, MapPin, Phone, Clock, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 const PatanBranch = () => {
   const galleryImages = [
@@ -13,7 +14,9 @@ const PatanBranch = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
+      <Header />
+      
       <div className="bg-white shadow-sm">
         <div className="container mx-auto px-4 py-4">
           <Link to="/" className="flex items-center gap-2 text-emerald-600 hover:text-emerald-700">
@@ -127,6 +130,8 @@ const PatanBranch = () => {
           </div>
         </div>
       </section>
+    
+      <Footer />
     </div>
   );
 };
