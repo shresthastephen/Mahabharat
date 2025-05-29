@@ -3,7 +3,7 @@ import { ArrowRight, Star } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="home" className="relative bg-gradient-to-r from-red-600 via-red-700 to-orange-600 text-white overflow-hidden">
+    <section id="home" className="relative bg-gradient-to-r from-emerald-600 via-emerald-700 to-teal-600 text-white overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
@@ -15,27 +15,27 @@ const Hero = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left content */}
           <div className="space-y-8">
-            <div className="flex items-center gap-2 text-orange-200">
+            <div className="flex items-center gap-2 text-teal-200">
               <Star className="fill-current" size={20} />
               <span className="text-sm font-medium">Authentic Nepalese Cuisine</span>
             </div>
             
             <h1 className="text-5xl md:text-7xl font-bold leading-tight">
               Taste the 
-              <span className="block text-orange-300">Authentic</span>
+              <span className="block text-teal-300">Authentic</span>
               <span className="block">Momos</span>
             </h1>
             
-            <p className="text-xl text-red-100 leading-relaxed max-w-lg">
+            <p className="text-xl text-emerald-100 leading-relaxed max-w-lg">
               Experience the rich flavors of traditional Nepalese momos, handcrafted with love and served fresh from our kitchen to your table.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-white text-red-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-colors flex items-center gap-2 justify-center">
+              <button className="bg-white text-emerald-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-colors flex items-center gap-2 justify-center">
                 Order Now
                 <ArrowRight size={20} />
               </button>
-              <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-red-600 transition-colors">
+              <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-emerald-600 transition-colors">
                 View Menu
               </button>
             </div>
@@ -43,15 +43,15 @@ const Hero = () => {
             <div className="flex items-center gap-8 pt-4">
               <div className="text-center">
                 <div className="text-3xl font-bold">500+</div>
-                <div className="text-red-200 text-sm">Happy Customers</div>
+                <div className="text-emerald-200 text-sm">Happy Customers</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold">15+</div>
-                <div className="text-red-200 text-sm">Momo Varieties</div>
+                <div className="text-emerald-200 text-sm">Momo Varieties</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold">4.9</div>
-                <div className="text-red-200 text-sm">Rating</div>
+                <div className="text-emerald-200 text-sm">Rating</div>
               </div>
             </div>
           </div>
@@ -73,7 +73,7 @@ const Hero = () => {
             </div>
             
             {/* Floating elements */}
-            <div className="absolute -top-4 -right-4 bg-orange-400 text-white px-4 py-2 rounded-full text-sm font-semibold animate-bounce">
+            <div className="absolute -top-4 -right-4 bg-teal-400 text-white px-4 py-2 rounded-full text-sm font-semibold animate-bounce">
               Hot & Fresh! 🔥
             </div>
             <div className="absolute -bottom-4 -left-4 bg-yellow-400 text-gray-800 px-4 py-2 rounded-full text-sm font-semibold">

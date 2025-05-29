@@ -50,7 +50,7 @@ const FeaturedMenu = () => {
       <Flame
         key={i}
         size={16}
-        className={i < level ? "text-red-500 fill-current" : "text-gray-300"}
+        className={i < level ? "text-orange-500 fill-current" : "text-gray-300"}
       />
     ));
   };
@@ -76,7 +76,7 @@ const FeaturedMenu = () => {
                   alt={item.name}
                   className="w-full h-48 object-cover"
                 />
-                <div className="absolute top-4 right-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                <div className="absolute top-4 right-4 bg-emerald-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
                   {item.price}
                 </div>
               </div>
@@ -104,7 +104,7 @@ const FeaturedMenu = () => {
                         {getSpicyLevel(item.spicy)}
                       </div>
                     </div>
-                    <button className="bg-red-600 text-white px-4 py-2 rounded-full text-sm hover:bg-red-700 transition-colors">
+                    <button className="bg-emerald-600 text-white px-4 py-2 rounded-full text-sm hover:bg-emerald-700 transition-colors font-medium">
                       Add to Cart
                     </button>
                   </div>
@@ -115,7 +115,7 @@ const FeaturedMenu = () => {
         </div>
 
         <div className="text-center mt-12">
-          <button className="bg-orange-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-orange-600 transition-colors">
+          <button className="bg-teal-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-teal-600 transition-colors">
             View Full Menu
           </button>
         </div>

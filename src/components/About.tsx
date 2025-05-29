@@ -34,7 +34,7 @@ const About = () => {
             <div>
               <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
                 Our Story of 
-                <span className="text-red-600"> Authentic Flavors</span>
+                <span className="text-emerald-600"> Authentic Flavors</span>
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
                 Welcome to Momo Center, where tradition meets taste. Established in 2010, we've been 
@@ -51,8 +51,8 @@ const About = () => {
             <div className="grid grid-cols-2 gap-6">
               {features.map((feature, index) => (
                 <div key={index} className="text-center p-4">
-                  <div className="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
-                    <feature.icon className="text-red-600" size={24} />
+                  <div className="bg-emerald-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <feature.icon className="text-emerald-600" size={24} />
                   </div>
                   <h3 className="font-semibold text-gray-800 mb-2">{feature.title}</h3>
                   <p className="text-sm text-gray-600 leading-relaxed">{feature.description}</p>
@@ -91,13 +91,13 @@ const About = () => {
             </div>
 
             {/* Floating stats */}
-            <div className="absolute -bottom-8 -left-8 bg-orange-500 text-white p-6 rounded-2xl shadow-xl">
+            <div className="absolute -bottom-8 -left-8 bg-teal-500 text-white p-6 rounded-2xl shadow-xl">
               <div className="text-3xl font-bold">10+</div>
-              <div className="text-orange-100 text-sm">Years Experience</div>
+              <div className="text-teal-100 text-sm">Years Experience</div>
             </div>
-            <div className="absolute -top-8 -right-8 bg-red-600 text-white p-6 rounded-2xl shadow-xl">
+            <div className="absolute -top-8 -right-8 bg-emerald-600 text-white p-6 rounded-2xl shadow-xl">
               <div className="text-3xl font-bold">1000+</div>
-              <div className="text-red-100 text-sm">Momos Daily</div>
+              <div className="text-emerald-100 text-sm">Momos Daily</div>
             </div>
           </div>
         </div>
