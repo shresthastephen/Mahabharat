@@ -28,17 +28,17 @@ const Footer = () => {
   };
 
   return (
-    <footer id="contact" className="bg-emerald-800 text-white">
+    <footer id="contact" className="bg-yellow-800 text-white">
       <div className="container mx-auto px-4 py-16">
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
           {/* Company Info */}
           <div className="space-y-6">
             <div className="flex items-center">
-              <div className="text-3xl font-bold text-emerald-400">
+              <div className="text-3xl font-bold text-yellow-400">
                 🍜 <span className="text-white">Momo Palace</span>
               </div>
             </div>
-            <p className="text-emerald-100 leading-relaxed">
+            <p className="text-yellow-100 leading-relaxed">
               Serving authentic Nepalese momos since 2010. Experience the true taste of Nepal 
               with our handcrafted dumplings made with love and traditional recipes.
             </p>
@@ -48,12 +48,12 @@ const Footer = () => {
           <div className="space-y-6">
             <h3 className="text-xl font-semibold">Quick Links</h3>
             <ul className="space-y-3">
-              <li><button onClick={() => handleNavClick('home')} className="text-emerald-100 hover:text-emerald-400 transition-colors">Home</button></li>
-              <li><button onClick={() => handleNavClick('menu')} className="text-emerald-100 hover:text-emerald-400 transition-colors">Menu</button></li>
-              <li><button onClick={() => handleNavClick('branches')} className="text-emerald-100 hover:text-emerald-400 transition-colors">Branches</button></li>
-              <li><button onClick={() => handleNavClick('about')} className="text-emerald-100 hover:text-emerald-400 transition-colors">About Us</button></li>
-              <li><button onClick={() => handleNavClick('contact')} className="text-emerald-100 hover:text-emerald-400 transition-colors">Contact</button></li>
-              <li><button onClick={handleOrderNow} className="text-emerald-100 hover:text-emerald-400 transition-colors">Online Order</button></li>
+              <li><button onClick={() => handleNavClick('home')} className="text-yellow-100 hover:text-yellow-400 transition-colors">Home</button></li>
+              <li><button onClick={() => handleNavClick('menu')} className="text-yellow-100 hover:text-yellow-400 transition-colors">Menu</button></li>
+              <li><button onClick={() => handleNavClick('branches')} className="text-yellow-100 hover:text-yellow-400 transition-colors">Branches</button></li>
+              <li><button onClick={() => handleNavClick('about')} className="text-yellow-100 hover:text-yellow-400 transition-colors">About Us</button></li>
+              <li><button onClick={() => handleNavClick('contact')} className="text-yellow-100 hover:text-yellow-400 transition-colors">Contact</button></li>
+              <li><button onClick={handleOrderNow} className="text-yellow-100 hover:text-yellow-400 transition-colors">Online Order</button></li>
             </ul>
           </div>
 
@@ -61,12 +61,12 @@ const Footer = () => {
           <div className="space-y-6">
             <h3 className="text-xl font-semibold">Our Specialties</h3>
             <ul className="space-y-3">
-              <li><button onClick={() => handleNavClick('menu')} className="text-emerald-100 hover:text-emerald-400 transition-colors">Steamed Momos</button></li>
-              <li><button onClick={() => handleNavClick('menu')} className="text-emerald-100 hover:text-emerald-400 transition-colors">Fried Momos</button></li>
-              <li><button onClick={() => handleNavClick('menu')} className="text-emerald-100 hover:text-emerald-400 transition-colors">Jhol Momos</button></li>
-              <li><button onClick={() => handleNavClick('menu')} className="text-emerald-100 hover:text-emerald-400 transition-colors">Chow Mein</button></li>
-              <li><button onClick={() => handleNavClick('menu')} className="text-emerald-100 hover:text-emerald-400 transition-colors">Thukpa</button></li>
-              <li><button onClick={() => handleNavClick('menu')} className="text-emerald-100 hover:text-emerald-400 transition-colors">Sel Roti</button></li>
+              <li><button onClick={() => handleNavClick('menu')} className="text-yellow-100 hover:text-yellow-400 transition-colors">Steamed Momos</button></li>
+              <li><button onClick={() => handleNavClick('menu')} className="text-yellow-100 hover:text-yellow-400 transition-colors">Fried Momos</button></li>
+              <li><button onClick={() => handleNavClick('menu')} className="text-yellow-100 hover:text-yellow-400 transition-colors">Jhol Momos</button></li>
+              <li><button onClick={() => handleNavClick('menu')} className="text-yellow-100 hover:text-yellow-400 transition-colors">Chow Mein</button></li>
+              <li><button onClick={() => handleNavClick('menu')} className="text-yellow-100 hover:text-yellow-400 transition-colors">Thukpa</button></li>
+              <li><button onClick={() => handleNavClick('menu')} className="text-yellow-100 hover:text-yellow-400 transition-colors">Sel Roti</button></li>
             </ul>
           </div>
 
@@ -75,25 +75,25 @@ const Footer = () => {
             <h3 className="text-xl font-semibold">Contact Us</h3>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <MapPin className="text-emerald-400 mt-1 flex-shrink-0" size={20} />
+                <MapPin className="text-yellow-400 mt-1 flex-shrink-0" size={20} />
                 <div>
-                  <p className="text-emerald-100">Thamel, Kathmandu</p>
-                  <p className="text-emerald-100">Nepal 44600</p>
+                  <p className="text-yellow-100">Thamel, Kathmandu</p>
+                  <p className="text-yellow-100">Nepal 44600</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
-                <Phone className="text-emerald-400 flex-shrink-0" size={20} />
-                <p className="text-emerald-100">+977-1-4567890</p>
+                <Phone className="text-yellow-400 flex-shrink-0" size={20} />
+                <p className="text-yellow-100">+977-1-4567890</p>
               </div>
               <div className="flex items-center gap-3">
-                <Mail className="text-emerald-400 flex-shrink-0" size={20} />
-                <p className="text-emerald-100">info@momopalace.com.np</p>
+                <Mail className="text-yellow-400 flex-shrink-0" size={20} />
+                <p className="text-yellow-100">info@momopalace.com.np</p>
               </div>
               <div className="flex items-start gap-3">
-                <Clock className="text-emerald-400 mt-1 flex-shrink-0" size={20} />
+                <Clock className="text-yellow-400 mt-1 flex-shrink-0" size={20} />
                 <div>
-                  <p className="text-emerald-100">Mon - Sun</p>
-                  <p className="text-emerald-100">10:00 AM - 10:00 PM</p>
+                  <p className="text-yellow-100">Mon - Sun</p>
+                  <p className="text-yellow-100">10:00 AM - 10:00 PM</p>
                 </div>
               </div>
             </div>
@@ -101,15 +101,15 @@ const Footer = () => {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-emerald-700 mt-12 pt-8">
+        <div className="border-t border-yellow-700 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-emerald-200 text-sm">
+            <p className="text-yellow-200 text-sm">
               © 2024 Momo Palace Nepal. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="text-emerald-200 hover:text-emerald-400 text-sm transition-colors">Privacy Policy</a>
-              <a href="#" className="text-emerald-200 hover:text-emerald-400 text-sm transition-colors">Terms of Service</a>
-              <a href="#" className="text-emerald-200 hover:text-emerald-400 text-sm transition-colors">Cookie Policy</a>
+              <a href="#" className="text-yellow-200 hover:text-yellow-400 text-sm transition-colors">Privacy Policy</a>
+              <a href="#" className="text-yellow-200 hover:text-yellow-400 text-sm transition-colors">Terms of Service</a>
+              <a href="#" className="text-yellow-200 hover:text-yellow-400 text-sm transition-colors">Cookie Policy</a>
             </div>
           </div>
         </div>

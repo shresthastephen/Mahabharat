@@ -34,7 +34,7 @@ const Header = () => {
   return (
     <header className="bg-white shadow-lg sticky top-0 z-50">
       {/* Top bar with contact info */}
-      <div className="bg-emerald-600 text-white py-2 px-4">
+      <div className="bg-yellow-600 text-white py-2 px-4">
         <div className="container mx-auto flex justify-between items-center text-sm">
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-1">
@@ -57,7 +57,7 @@ const Header = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="flex items-center" onClick={() => window.scrollTo(0, 0)}>
-            <div className="text-3xl font-bold text-emerald-600">
+            <div className="text-3xl font-bold text-yellow-600">
               🍜 <span className="text-gray-800">Momo Palace</span>
             </div>
           </Link>
@@ -66,37 +66,37 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-8">
             <button 
               onClick={() => handleNavClick('home')} 
-              className="text-gray-700 hover:text-emerald-600 font-medium transition-colors"
+              className="text-gray-700 hover:text-yellow-600 font-medium transition-colors"
             >
               Home
             </button>
             <button 
               onClick={() => handleNavClick('menu')} 
-              className="text-gray-700 hover:text-emerald-600 font-medium transition-colors"
+              className="text-gray-700 hover:text-yellow-600 font-medium transition-colors"
             >
               Menu
             </button>
             <button 
               onClick={() => handleNavClick('branches')} 
-              className="text-gray-700 hover:text-emerald-600 font-medium transition-colors"
+              className="text-gray-700 hover:text-yellow-600 font-medium transition-colors"
             >
               Branches
             </button>
             <button 
               onClick={() => handleNavClick('about')} 
-              className="text-gray-700 hover:text-emerald-600 font-medium transition-colors"
+              className="text-gray-700 hover:text-yellow-600 font-medium transition-colors"
             >
               About Us
             </button>
             <button 
               onClick={() => handleNavClick('contact')} 
-              className="text-gray-700 hover:text-emerald-600 font-medium transition-colors"
+              className="text-gray-700 hover:text-yellow-600 font-medium transition-colors"
             >
               Contact
             </button>
             <button 
               onClick={handleOrderNow}
-              className="bg-emerald-600 text-white px-6 py-2 rounded-full hover:bg-emerald-700 transition-colors font-medium"
+              className="bg-yellow-600 text-white px-6 py-2 rounded-full hover:bg-yellow-700 transition-colors font-medium"
             >
               Order Now
             </button>
@@ -117,37 +117,37 @@ const Header = () => {
             <div className="flex flex-col space-y-4 pt-4">
               <button 
                 onClick={() => handleNavClick('home')} 
-                className="text-gray-700 hover:text-emerald-600 font-medium text-left"
+                className="text-gray-700 hover:text-yellow-600 font-medium text-left"
               >
                 Home
               </button>
               <button 
                 onClick={() => handleNavClick('menu')} 
-                className="text-gray-700 hover:text-emerald-600 font-medium text-left"
+                className="text-gray-700 hover:text-yellow-600 font-medium text-left"
               >
                 Menu
               </button>
               <button 
                 onClick={() => handleNavClick('branches')} 
-                className="text-gray-700 hover:text-emerald-600 font-medium text-left"
+                className="text-gray-700 hover:text-yellow-600 font-medium text-left"
               >
                 Branches
               </button>
               <button 
                 onClick={() => handleNavClick('about')} 
-                className="text-gray-700 hover:text-emerald-600 font-medium text-left"
+                className="text-gray-700 hover:text-yellow-600 font-medium text-left"
               >
                 About Us
               </button>
               <button 
                 onClick={() => handleNavClick('contact')} 
-                className="text-gray-700 hover:text-emerald-600 font-medium text-left"
+                className="text-gray-700 hover:text-yellow-600 font-medium text-left"
               >
                 Contact
               </button>
               <button 
                 onClick={handleOrderNow}
-                className="bg-emerald-600 text-white px-6 py-2 rounded-full w-fit font-medium"
+                className="bg-yellow-600 text-white px-6 py-2 rounded-full w-fit font-medium"
               >
                 Order Now
               </button>

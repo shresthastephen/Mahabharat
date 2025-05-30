@@ -1,5 +1,5 @@
+
 import { MapPin, Phone, Clock, Star } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
@@ -18,7 +18,7 @@ const ThamelBranch = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-emerald-600 to-teal-600 text-white py-16">
+      <section className="bg-gradient-to-r from-yellow-600 to-amber-600 text-white py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl">
             <div className="flex items-center gap-2 mb-4">
@@ -27,30 +27,30 @@ const ThamelBranch = () => {
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Thamel Branch</h1>
-            <p className="text-xl text-emerald-100 mb-8">
+            <p className="text-xl text-yellow-100 mb-8">
               Our flagship location in the heart of Kathmandu's tourist district, serving authentic momos since 2010.
             </p>
             
             <div className="grid md:grid-cols-3 gap-6">
               <div className="flex items-center gap-3">
-                <MapPin className="text-emerald-300" size={20} />
+                <MapPin className="text-yellow-300" size={20} />
                 <div>
                   <div className="font-semibold">Location</div>
-                  <div className="text-emerald-100">Thamel, Kathmandu</div>
+                  <div className="text-yellow-100">Thamel, Kathmandu</div>
                 </div>
               </div>
               <div className="flex items-center gap-3">
-                <Phone className="text-emerald-300" size={20} />
+                <Phone className="text-yellow-300" size={20} />
                 <div>
                   <div className="font-semibold">Phone</div>
-                  <div className="text-emerald-100">+977-1-4567890</div>
+                  <div className="text-yellow-100">+977-1-4567890</div>
                 </div>
               </div>
               <div className="flex items-center gap-3">
-                <Clock className="text-emerald-300" size={20} />
+                <Clock className="text-yellow-300" size={20} />
                 <div>
                   <div className="font-semibold">Hours</div>
-                  <div className="text-emerald-100">10:00 AM - 10:00 PM</div>
+                  <div className="text-yellow-100">10:00 AM - 10:00 PM</div>
                 </div>
               </div>
             </div>
@@ -114,19 +114,16 @@ const ThamelBranch = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-emerald-600 text-white">
+      <section className="py-16 bg-yellow-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Visit Us Today!</h2>
-          <p className="text-emerald-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-yellow-100 mb-8 max-w-2xl mx-auto">
             Experience the authentic taste of Nepal at our Thamel branch. Perfect for families, friends, and food lovers.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-emerald-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
+            <button className="bg-white text-yellow-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
               Get Directions
             </button>
-            <Link to="/order" className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-emerald-600 transition-colors">
-              Order Now
-            </Link>
           </div>
         </div>
       </section>
