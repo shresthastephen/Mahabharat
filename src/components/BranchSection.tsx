@@ -50,6 +50,7 @@ const BranchSection = () => {
 
   const handleBranchClick = (route: string) => {
     navigate(route);
+    window.scrollTo(0, 0);
   };
 
   return (
