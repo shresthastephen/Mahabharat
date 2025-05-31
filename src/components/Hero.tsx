@@ -24,44 +24,41 @@ const Hero = () => {
           <div className="space-y-8">
             <div className="flex items-center gap-2 text-teal-200">
               <Star className="fill-current" size={20} />
-              <span className="text-sm font-medium">Authentic Nepalese Cuisine</span>
+              <span className="text-sm font-medium font-inter">Authentic Nepalese Cuisine</span>
             </div>
             
-            <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight font-nunito">
               Taste the 
               <span className="block text-teal-300">Authentic</span>
               <span className="block">Momos</span>
             </h1>
             
-            <p className="text-xl text-emerald-100 leading-relaxed max-w-lg">
+            <p className="text-lg md:text-xl text-emerald-100 leading-relaxed max-w-lg font-inter">
               Experience the rich flavors of traditional Nepalese momos, handcrafted with love and served fresh from our kitchen to your table.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
               <button 
                 onClick={handleOrderNow}
-                className="bg-white text-emerald-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-colors flex items-center gap-2 justify-center"
+                className="bg-white text-emerald-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-colors flex items-center gap-2 justify-center font-nunito"
               >
                 Order Now
                 <ArrowRight size={20} />
-              </button>
-              <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-emerald-600 transition-colors">
-                View Menu
               </button>
             </div>
             
             <div className="flex items-center gap-8 pt-4">
               <div className="text-center">
-                <div className="text-3xl font-bold">500+</div>
-                <div className="text-emerald-200 text-sm">Happy Customers</div>
+                <div className="text-3xl font-bold font-nunito">500+</div>
+                <div className="text-emerald-200 text-sm font-inter">Happy Customers</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold">15+</div>
-                <div className="text-emerald-200 text-sm">Momo Varieties</div>
+                <div className="text-3xl font-bold font-nunito">15+</div>
+                <div className="text-emerald-200 text-sm font-inter">Momo Varieties</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold">4.9</div>
-                <div className="text-emerald-200 text-sm">Rating</div>
+                <div className="text-3xl font-bold font-nunito">4.9</div>
+                <div className="text-emerald-200 text-sm font-inter">Rating</div>
               </div>
             </div>
           </div>
@@ -76,17 +73,17 @@ const Hero = () => {
                   className="w-full h-80 object-cover rounded-2xl"
                 />
                 <div className="mt-4 text-center">
-                  <h3 className="text-2xl font-bold text-gray-800">Steamed Momos</h3>
-                  <p className="text-gray-600">Fresh • Authentic • Delicious</p>
+                  <h3 className="text-2xl font-bold text-gray-800 font-nunito">Steamed Momos</h3>
+                  <p className="text-gray-600 font-inter">Fresh • Authentic • Delicious</p>
                 </div>
               </div>
             </div>
             
             {/* Floating elements */}
-            <div className="absolute -top-4 -right-4 bg-teal-400 text-white px-4 py-2 rounded-full text-sm font-semibold animate-bounce">
+            <div className="absolute -top-4 -right-4 bg-teal-400 text-white px-4 py-2 rounded-full text-sm font-semibold animate-bounce font-inter">
               Hot & Fresh! 🔥
             </div>
-            <div className="absolute -bottom-4 -left-4 bg-yellow-400 text-gray-800 px-4 py-2 rounded-full text-sm font-semibold">
+            <div className="absolute -bottom-4 -left-4 bg-yellow-400 text-gray-800 px-4 py-2 rounded-full text-sm font-semibold font-inter">
               Rs. 180 only
             </div>
           </div>

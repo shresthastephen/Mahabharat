@@ -20,8 +20,9 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'poppins': ['Poppins', 'sans-serif'],
-				'dancing': ['Dancing Script', 'cursive'],
+				'inter': ['Inter', 'sans-serif'],
+				'nunito': ['Nunito', 'sans-serif'],
+				'playfair': ['Playfair Display', 'serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

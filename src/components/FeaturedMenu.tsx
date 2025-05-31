@@ -25,10 +25,10 @@ const FeaturedMenu = () => {
     <section id="menu" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4 font-nunito">
             Our Featured Menu
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto font-inter">
             Discover our signature momos, each crafted with authentic recipes passed down through generations
           </p>
         </div>
@@ -45,8 +45,8 @@ const FeaturedMenu = () => {
               </div>
               
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-2">{item.name}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{item.description}</p>
+                <h3 className="text-xl font-bold text-gray-800 mb-2 font-nunito">{item.name}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed font-inter">{item.description}</p>
               </div>
             </div>
           ))}

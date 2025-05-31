@@ -52,15 +52,19 @@
   }
 
   body {
-    @apply bg-white text-gray-900 font-poppins;
+    @apply bg-white text-gray-900 font-inter;
     min-height: 100vh;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply font-poppins font-bold;
+    @apply font-nunito font-bold;
   }
   
   .brand-title {
-    @apply font-dancing;
+    @apply font-playfair;
+  }
+  
+  p, span, div {
+    @apply font-inter;
   }
 }
