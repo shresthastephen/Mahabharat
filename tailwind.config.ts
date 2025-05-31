@@ -66,17 +66,6 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				},
-				// Dark theme colors
-				dark: {
-					bg: '#0a0a0a',
-					surface: '#1a1a1a',
-					card: '#2a2a2a',
-					accent: '#ff6b35',
-					'accent-dark': '#e55a2b',
-					text: '#ffffff',
-					'text-muted': '#a1a1aa',
-					border: '#3f3f46'
 				}
 			},
 			borderRadius: {

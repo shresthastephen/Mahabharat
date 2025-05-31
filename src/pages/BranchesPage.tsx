@@ -56,11 +56,11 @@ const BranchesPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-dark-bg">
+    <div className="min-h-screen bg-gray-50">
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-dark-accent to-dark-accent-dark text-white py-16">
+      <section className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-16">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 brand-title">All Our Branches</h1>
           <p className="text-xl max-w-2xl mx-auto">
@@ -77,10 +77,10 @@ const BranchesPage = () => {
               <div 
                 key={branch.id} 
                 onClick={() => handleBranchClick(branch.route)}
-                className="bg-dark-card rounded-2xl shadow-2xl overflow-hidden hover:shadow-3xl transition-all duration-300 hover:-translate-y-2 relative cursor-pointer border border-dark-border hover:border-dark-accent"
+                className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 relative cursor-pointer border border-gray-200 hover:border-blue-500"
               >
                 {branch.isMain && (
-                  <div className="absolute top-4 left-4 bg-dark-accent text-white px-3 py-1 rounded-full text-sm font-semibold z-10">
+                  <div className="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold z-10">
                     Main Branch
                   </div>
                 )}
@@ -91,31 +91,31 @@ const BranchesPage = () => {
                     alt={`${branch.name} - Authentic Nepalese Momo Restaurant`}
                     className="w-full h-48 object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                 </div>
                 
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-dark-text mb-3">{branch.name}</h3>
+                  <h3 className="text-xl font-bold text-gray-800 mb-3">{branch.name}</h3>
                   
                   <div className="space-y-3">
                     <div className="flex items-start gap-2">
-                      <MapPin className="text-dark-accent mt-1 flex-shrink-0" size={16} />
-                      <span className="text-dark-text-muted text-sm">{branch.location}</span>
+                      <MapPin className="text-blue-600 mt-1 flex-shrink-0" size={16} />
+                      <span className="text-gray-600 text-sm">{branch.location}</span>
                     </div>
                     
                     <div className="flex items-center gap-2">
-                      <Phone className="text-dark-accent flex-shrink-0" size={16} />
-                      <span className="text-dark-text-muted text-sm">{branch.phone}</span>
+                      <Phone className="text-blue-600 flex-shrink-0" size={16} />
+                      <span className="text-gray-600 text-sm">{branch.phone}</span>
                     </div>
                     
                     <div className="flex items-center gap-2">
-                      <Clock className="text-dark-accent flex-shrink-0" size={16} />
-                      <span className="text-dark-text-muted text-sm">{branch.hours}</span>
+                      <Clock className="text-blue-600 flex-shrink-0" size={16} />
+                      <span className="text-gray-600 text-sm">{branch.hours}</span>
                     </div>
                   </div>
                   
-                  <div className="mt-4 pt-4 border-t border-dark-border">
-                    <button className="w-full bg-gradient-to-r from-dark-accent to-dark-accent-dark text-white px-4 py-2 rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-300 font-medium">
+                  <div className="mt-4 pt-4 border-t border-gray-200">
+                    <button className="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 py-2 rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-300 font-medium">
                       View Details
                     </button>
                   </div>

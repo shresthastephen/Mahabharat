@@ -44,29 +44,19 @@ const OrderPage = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gray-50">
       <Header />
-
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-orange-600 to-red-600 text-white py-16">
-        <div className="container mx-auto px-4 text-center">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <ShoppingBag size={32} />
-            <h1 className="text-4xl md:text-5xl font-bold">Order From Our Branches</h1>
-          </div>
-          <p className="text-xl text-orange-100 max-w-2xl mx-auto">
-            Choose your nearest location and get fresh, hot momos delivered to your doorstep
-          </p>
-        </div>
-      </section>
 
       {/* Branches Section */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Select Your Branch</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              All our branches serve the same authentic recipes with fresh ingredients and fast delivery
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <ShoppingBag className="text-blue-600" size={32} />
+              <h1 className="text-4xl md:text-5xl font-bold text-gray-800">Order From Our Branches</h1>
+            </div>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Choose your nearest location and get fresh, hot momos delivered to your doorstep
             </p>
           </div>
 
@@ -74,7 +64,7 @@ const OrderPage = () => {
             {branches.map((branch) => (
               <div key={branch.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 relative">
                 {branch.isMain && (
-                  <div className="absolute top-4 left-4 bg-orange-400 text-gray-800 px-3 py-1 rounded-full text-sm font-semibold z-10">
+                  <div className="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold z-10">
                     Main Branch
                   </div>
                 )}
@@ -106,7 +96,7 @@ const OrderPage = () => {
                   </div>
                   
                   <div className="space-y-3">
-                    <button className="w-full bg-orange-600 text-white px-6 py-3 rounded-lg hover:bg-orange-700 transition-colors font-semibold">
+                    <button className="w-full bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold">
                       Order Now
                     </button>
                   </div>
@@ -118,36 +108,36 @@ const OrderPage = () => {
       </section>
 
       {/* Info Section */}
-      <section className="py-16 bg-orange-600 text-white">
+      <section className="py-16 bg-blue-600 text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Why Order From Us?</h2>
-            <p className="text-orange-100 max-w-2xl mx-auto">
+            <p className="text-blue-100 max-w-2xl mx-auto">
               We ensure the highest quality and fastest delivery for all our customers
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="bg-orange-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <ShoppingBag size={24} />
               </div>
               <h3 className="text-xl font-semibold mb-2">Fast Delivery</h3>
-              <p className="text-orange-100">Fresh momos delivered hot to your doorstep in 30 minutes or less</p>
+              <p className="text-blue-100">Fresh momos delivered hot to your doorstep in 30 minutes or less</p>
             </div>
             <div className="text-center">
-              <div className="bg-orange-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <ShoppingBag size={24} />
               </div>
               <h3 className="text-xl font-semibold mb-2">Quality Guaranteed</h3>
-              <p className="text-orange-100">Same authentic taste and quality from all our branches</p>
+              <p className="text-blue-100">Same authentic taste and quality from all our branches</p>
             </div>
             <div className="text-center">
-              <div className="bg-orange-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <ShoppingBag size={24} />
               </div>
               <h3 className="text-xl font-semibold mb-2">Easy Ordering</h3>
-              <p className="text-orange-100">Simple online ordering system with real-time tracking</p>
+              <p className="text-blue-100">Simple online ordering system with real-time tracking</p>
             </div>
           </div>
         </div>
