@@ -13,44 +13,57 @@ const ThamelBranch = () => {
     "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&h=300&fit=crop"
   ];
 
+  const menuItems = [
+    { name: "Steam Momos (Chicken)", price: "Rs. 180" },
+    { name: "Steam Momos (Buff)", price: "Rs. 160" },
+    { name: "Steam Momos (Veg)", price: "Rs. 140" },
+    { name: "Fried Momos (Chicken)", price: "Rs. 200" },
+    { name: "Fried Momos (Buff)", price: "Rs. 180" },
+    { name: "Jhol Momos (Chicken)", price: "Rs. 220" },
+    { name: "Chow Mein (Chicken)", price: "Rs. 250" },
+    { name: "Thukpa (Chicken)", price: "Rs. 280" },
+    { name: "Sel Roti", price: "Rs. 120" },
+    { name: "Gundruk Soup", price: "Rs. 150" }
+  ];
+
   return (
     <div className="min-h-screen">
       <Header />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-yellow-600 to-amber-600 text-white py-16">
+      <section className="bg-gradient-to-r from-orange-600 to-red-600 text-white py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl">
             <div className="flex items-center gap-2 mb-4">
-              <span className="bg-yellow-400 text-gray-800 px-3 py-1 rounded-full text-sm font-semibold">
+              <span className="bg-orange-400 text-gray-800 px-3 py-1 rounded-full text-sm font-semibold">
                 Main Branch
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Thamel Branch</h1>
-            <p className="text-xl text-yellow-100 mb-8">
+            <p className="text-xl text-orange-100 mb-8">
               Our flagship location in the heart of Kathmandu's tourist district, serving authentic momos since 2010.
             </p>
             
             <div className="grid md:grid-cols-3 gap-6">
               <div className="flex items-center gap-3">
-                <MapPin className="text-yellow-300" size={20} />
+                <MapPin className="text-orange-300" size={20} />
                 <div>
                   <div className="font-semibold">Location</div>
-                  <div className="text-yellow-100">Thamel, Kathmandu</div>
+                  <div className="text-orange-100">Thamel, Kathmandu</div>
                 </div>
               </div>
               <div className="flex items-center gap-3">
-                <Phone className="text-yellow-300" size={20} />
+                <Phone className="text-orange-300" size={20} />
                 <div>
                   <div className="font-semibold">Phone</div>
-                  <div className="text-yellow-100">+977-1-4567890</div>
+                  <div className="text-orange-100">+977-1-4567890</div>
                 </div>
               </div>
               <div className="flex items-center gap-3">
-                <Clock className="text-yellow-300" size={20} />
+                <Clock className="text-orange-300" size={20} />
                 <div>
                   <div className="font-semibold">Hours</div>
-                  <div className="text-yellow-100">10:00 AM - 10:00 PM</div>
+                  <div className="text-orange-100">10:00 AM - 10:00 PM</div>
                 </div>
               </div>
             </div>
@@ -71,10 +84,10 @@ const ThamelBranch = () => {
               </p>
               <p className="text-gray-600 leading-relaxed mb-6">
                 With our largest seating capacity and most extensive menu, the Thamel branch offers the full 
-                Momo Center experience. From traditional steamed momos to innovative fusion varieties, 
+                Momo Palace experience. From traditional steamed momos to innovative fusion varieties, 
                 every dish is prepared with the same love and authenticity that made us famous.
               </p>
-              <div className="flex items-center gap-2 text-yellow-500">
+              <div className="flex items-center gap-2 text-orange-500">
                 <Star className="fill-current" size={20} />
                 <Star className="fill-current" size={20} />
                 <Star className="fill-current" size={20} />
@@ -89,6 +102,29 @@ const ThamelBranch = () => {
                 alt="Thamel Branch Interior"
                 className="w-full h-80 object-cover rounded-2xl shadow-lg"
               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Menu Section */}
+      <section className="py-16 bg-orange-50">
+        <div className="container mx-auto px-4">
+          <div className="bg-white rounded-2xl shadow-lg p-8 max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Menu</h2>
+            
+            <div className="grid gap-2 mb-6">
+              <div className="grid grid-cols-2 gap-4 p-4 bg-orange-100 rounded-lg font-semibold text-gray-800">
+                <div>Food Item</div>
+                <div className="text-right">Price</div>
+              </div>
+              
+              {menuItems.map((item, index) => (
+                <div key={index} className="grid grid-cols-2 gap-4 p-4 border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                  <div className="text-gray-700">{item.name}</div>
+                  <div className="text-right text-orange-600 font-semibold">{item.price}</div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -114,15 +150,18 @@ const ThamelBranch = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-yellow-600 text-white">
+      <section className="py-16 bg-orange-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Visit Us Today!</h2>
-          <p className="text-yellow-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-orange-100 mb-8 max-w-2xl mx-auto">
             Experience the authentic taste of Nepal at our Thamel branch. Perfect for families, friends, and food lovers.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-yellow-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
+            <button className="bg-white text-orange-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
               Get Directions
+            </button>
+            <button className="bg-orange-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-orange-400 transition-colors">
+              Order Now
             </button>
           </div>
         </div>
