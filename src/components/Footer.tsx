@@ -34,7 +34,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-6">
             <div className="flex items-center">
-              <div className="text-3xl font-bold brand-title text-blue-400">
+              <div className="text-3xl font-bold brand-title text-green-400">
                 Momo Palace
               </div>
             </div>
@@ -48,12 +48,12 @@ const Footer = () => {
           <div className="space-y-6">
             <h3 className="text-xl font-semibold text-white">Quick Links</h3>
             <ul className="space-y-3">
-              <li><button onClick={() => handleNavClick('home')} className="text-gray-300 hover:text-blue-400 transition-colors">Home</button></li>
-              <li><button onClick={() => handleNavClick('menu')} className="text-gray-300 hover:text-blue-400 transition-colors">Menu</button></li>
-              <li><button onClick={() => handleNavClick('branches')} className="text-gray-300 hover:text-blue-400 transition-colors">Branches</button></li>
-              <li><button onClick={() => handleNavClick('about')} className="text-gray-300 hover:text-blue-400 transition-colors">About Us</button></li>
-              <li><button onClick={() => handleNavClick('contact')} className="text-gray-300 hover:text-blue-400 transition-colors">Contact</button></li>
-              <li><button onClick={handleOrderNow} className="text-gray-300 hover:text-blue-400 transition-colors">Online Order</button></li>
+              <li><button onClick={() => handleNavClick('home')} className="text-gray-300 hover:text-green-400 transition-colors">Home</button></li>
+              <li><button onClick={() => handleNavClick('menu')} className="text-gray-300 hover:text-green-400 transition-colors">Menu</button></li>
+              <li><button onClick={() => handleNavClick('branches')} className="text-gray-300 hover:text-green-400 transition-colors">Branches</button></li>
+              <li><button onClick={() => handleNavClick('about')} className="text-gray-300 hover:text-green-400 transition-colors">About Us</button></li>
+              <li><button onClick={() => handleNavClick('contact')} className="text-gray-300 hover:text-green-400 transition-colors">Contact</button></li>
+              <li><button onClick={handleOrderNow} className="text-gray-300 hover:text-green-400 transition-colors">Online Order</button></li>
             </ul>
           </div>
 
@@ -61,12 +61,12 @@ const Footer = () => {
           <div className="space-y-6">
             <h3 className="text-xl font-semibold text-white">Our Specialties</h3>
             <ul className="space-y-3">
-              <li><button onClick={() => handleNavClick('menu')} className="text-gray-300 hover:text-blue-400 transition-colors">Steamed Momos</button></li>
-              <li><button onClick={() => handleNavClick('menu')} className="text-gray-300 hover:text-blue-400 transition-colors">Fried Momos</button></li>
-              <li><button onClick={() => handleNavClick('menu')} className="text-gray-300 hover:text-blue-400 transition-colors">Jhol Momos</button></li>
-              <li><button onClick={() => handleNavClick('menu')} className="text-gray-300 hover:text-blue-400 transition-colors">Chow Mein</button></li>
-              <li><button onClick={() => handleNavClick('menu')} className="text-gray-300 hover:text-blue-400 transition-colors">Thukpa</button></li>
-              <li><button onClick={() => handleNavClick('menu')} className="text-gray-300 hover:text-blue-400 transition-colors">Sel Roti</button></li>
+              <li><button onClick={() => handleNavClick('menu')} className="text-gray-300 hover:text-green-400 transition-colors">Steamed Momos</button></li>
+              <li><button onClick={() => handleNavClick('menu')} className="text-gray-300 hover:text-green-400 transition-colors">Jhol Momos</button></li>
+              <li><button onClick={() => handleNavClick('menu')} className="text-gray-300 hover:text-green-400 transition-colors">Chicken Momo</button></li>
+              <li><button onClick={() => handleNavClick('menu')} className="text-gray-300 hover:text-green-400 transition-colors">Vegetable Momo</button></li>
+              <li><button onClick={() => handleNavClick('menu')} className="text-gray-300 hover:text-green-400 transition-colors">Buff Momo</button></li>
+              <li><button onClick={() => handleNavClick('menu')} className="text-gray-300 hover:text-green-400 transition-colors">Chow Mein</button></li>
             </ul>
           </div>
 
@@ -75,22 +75,22 @@ const Footer = () => {
             <h3 className="text-xl font-semibold text-white">Contact Us</h3>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <MapPin className="text-blue-400 mt-1 flex-shrink-0" size={20} />
+                <MapPin className="text-green-400 mt-1 flex-shrink-0" size={20} />
                 <div>
                   <p className="text-gray-300">Thamel, Kathmandu</p>
                   <p className="text-gray-300">Nepal 44600</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
-                <Phone className="text-blue-400 flex-shrink-0" size={20} />
+                <Phone className="text-green-400 flex-shrink-0" size={20} />
                 <p className="text-gray-300">+977-1-4567890</p>
               </div>
               <div className="flex items-center gap-3">
-                <Mail className="text-blue-400 flex-shrink-0" size={20} />
+                <Mail className="text-green-400 flex-shrink-0" size={20} />
                 <p className="text-gray-300">info@momopalace.com.np</p>
               </div>
               <div className="flex items-start gap-3">
-                <Clock className="text-blue-400 mt-1 flex-shrink-0" size={20} />
+                <Clock className="text-green-400 mt-1 flex-shrink-0" size={20} />
                 <div>
                   <p className="text-gray-300">Mon - Sun</p>
                   <p className="text-gray-300">10:00 AM - 10:00 PM</p>
@@ -107,9 +107,9 @@ const Footer = () => {
               © 2024 Momo Palace Nepal. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="text-gray-400 hover:text-blue-400 text-sm transition-colors">Privacy Policy</a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 text-sm transition-colors">Terms of Service</a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 text-sm transition-colors">Cookie Policy</a>
+              <a href="#" className="text-gray-400 hover:text-green-400 text-sm transition-colors">Privacy Policy</a>
+              <a href="#" className="text-gray-400 hover:text-green-400 text-sm transition-colors">Terms of Service</a>
+              <a href="#" className="text-gray-400 hover:text-green-400 text-sm transition-colors">Cookie Policy</a>
             </div>
           </div>
         </div>

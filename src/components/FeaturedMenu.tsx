@@ -15,12 +15,6 @@ const FeaturedMenu = () => {
     },
     {
       id: 3,
-      name: "Fried Momo",
-      description: "Crispy golden-brown momos served with special chutney",
-      image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=300&h=200&fit=crop",
-    },
-    {
-      id: 4,
       name: "Buff Momo",
       description: "Traditional buffalo meat momos with authentic Nepalese flavors",
       image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=300&h=200&fit=crop",
@@ -39,9 +33,9 @@ const FeaturedMenu = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {menuItems.map((item) => (
-            <div key={item.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+            <div key={item.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-200 hover:border-green-500">
               <div className="relative">
                 <img
                   src={item.image}

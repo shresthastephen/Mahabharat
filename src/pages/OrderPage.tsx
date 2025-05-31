@@ -52,7 +52,7 @@ const OrderPage = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <div className="flex items-center justify-center gap-2 mb-4">
-              <ShoppingBag className="text-blue-600" size={32} />
+              <ShoppingBag className="text-green-600" size={32} />
               <h1 className="text-4xl md:text-5xl font-bold text-gray-800">Order From Our Branches</h1>
             </div>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -60,11 +60,11 @@ const OrderPage = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {branches.map((branch) => (
-              <div key={branch.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 relative">
+              <div key={branch.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 relative border border-gray-200 hover:border-green-500">
                 {branch.isMain && (
-                  <div className="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold z-10">
+                  <div className="absolute top-4 left-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold z-10">
                     Main Branch
                   </div>
                 )}
@@ -83,20 +83,20 @@ const OrderPage = () => {
                   
                   <div className="space-y-3 mb-6">
                     <div className="flex items-start gap-2">
-                      <span className="text-gray-600">{branch.location}</span>
+                      <span className="text-gray-600 text-sm">{branch.location}</span>
                     </div>
                     
                     <div className="flex items-center gap-2">
-                      <span className="text-gray-600">{branch.phone}</span>
+                      <span className="text-gray-600 text-sm">{branch.phone}</span>
                     </div>
                     
                     <div className="flex items-center gap-2">
-                      <span className="text-gray-600">{branch.hours}</span>
+                      <span className="text-gray-600 text-sm">{branch.hours}</span>
                     </div>
                   </div>
                   
                   <div className="space-y-3">
-                    <button className="w-full bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold">
+                    <button className="w-full bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors font-semibold">
                       Order Now
                     </button>
                   </div>
@@ -108,36 +108,36 @@ const OrderPage = () => {
       </section>
 
       {/* Info Section */}
-      <section className="py-16 bg-blue-600 text-white">
+      <section className="py-16 bg-green-600 text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Why Order From Us?</h2>
-            <p className="text-blue-100 max-w-2xl mx-auto">
+            <p className="text-green-100 max-w-2xl mx-auto">
               We ensure the highest quality and fastest delivery for all our customers
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-green-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <ShoppingBag size={24} />
               </div>
               <h3 className="text-xl font-semibold mb-2">Fast Delivery</h3>
-              <p className="text-blue-100">Fresh momos delivered hot to your doorstep in 30 minutes or less</p>
+              <p className="text-green-100">Fresh momos delivered hot to your doorstep in 30 minutes or less</p>
             </div>
             <div className="text-center">
-              <div className="bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-green-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <ShoppingBag size={24} />
               </div>
               <h3 className="text-xl font-semibold mb-2">Quality Guaranteed</h3>
-              <p className="text-blue-100">Same authentic taste and quality from all our branches</p>
+              <p className="text-green-100">Same authentic taste and quality from all our branches</p>
             </div>
             <div className="text-center">
-              <div className="bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-green-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <ShoppingBag size={24} />
               </div>
               <h3 className="text-xl font-semibold mb-2">Easy Ordering</h3>
-              <p className="text-blue-100">Simple online ordering system with real-time tracking</p>
+              <p className="text-green-100">Simple online ordering system with real-time tracking</p>
             </div>
           </div>
         </div>

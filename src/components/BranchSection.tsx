@@ -55,10 +55,10 @@ const BranchSection = () => {
             <div 
               key={branch.id} 
               onClick={() => handleBranchClick(branch.route)}
-              className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 relative cursor-pointer border border-gray-200 hover:border-blue-500"
+              className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 relative cursor-pointer border border-gray-200 hover:border-green-500"
             >
               {branch.isMain && (
-                <div className="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold z-10">
+                <div className="absolute top-4 left-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold z-10">
                   Main Branch
                 </div>
               )}
@@ -77,23 +77,23 @@ const BranchSection = () => {
                 
                 <div className="space-y-3">
                   <div className="flex items-start gap-2">
-                    <MapPin className="text-blue-600 mt-1 flex-shrink-0" size={16} />
+                    <MapPin className="text-green-600 mt-1 flex-shrink-0" size={16} />
                     <span className="text-gray-600 text-sm">{branch.location}</span>
                   </div>
                   
                   <div className="flex items-center gap-2">
-                    <Phone className="text-blue-600 flex-shrink-0" size={16} />
+                    <Phone className="text-green-600 flex-shrink-0" size={16} />
                     <span className="text-gray-600 text-sm">{branch.phone}</span>
                   </div>
                   
                   <div className="flex items-center gap-2">
-                    <Clock className="text-blue-600 flex-shrink-0" size={16} />
+                    <Clock className="text-green-600 flex-shrink-0" size={16} />
                     <span className="text-gray-600 text-sm">{branch.hours}</span>
                   </div>
                 </div>
                 
                 <div className="mt-4 pt-4 border-t border-gray-200">
-                  <button className="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 py-2 rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-300 font-medium">
+                  <button className="w-full bg-gradient-to-r from-green-600 to-green-700 text-white px-4 py-2 rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-300 font-medium">
                     View Details
                   </button>
                 </div>
@@ -105,7 +105,7 @@ const BranchSection = () => {
         <div className="text-center mt-12">
           <button 
             onClick={handleViewMore}
-            className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300 font-semibold text-lg"
+            className="bg-gradient-to-r from-green-600 to-green-700 text-white px-8 py-4 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300 font-semibold text-lg"
           >
             View More Branches
           </button>
