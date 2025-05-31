@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { Menu, X, MapPin, Phone } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useNavigate, Link } from 'react-router-dom';
 
 const Header = () => {
@@ -32,33 +32,15 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white shadow-lg sticky top-0 z-50">
-      {/* Top bar with contact info */}
-      <div className="bg-orange-600 text-white py-2 px-4">
-        <div className="container mx-auto flex justify-between items-center text-sm">
-          <div className="flex items-center gap-4">
-            <div className="flex items-center gap-1">
-              <MapPin size={14} />
-              <span>Kathmandu, Nepal</span>
-            </div>
-            <div className="flex items-center gap-1">
-              <Phone size={14} />
-              <span>+977-1-4567890</span>
-            </div>
-          </div>
-          <div className="hidden md:block">
-            <span>🕒 Open Daily: 10:00 AM - 10:00 PM</span>
-          </div>
-        </div>
-      </div>
-
+    <header className="bg-dark-surface shadow-2xl sticky top-0 z-50 border-b border-dark-border">
       {/* Main navigation */}
-      <nav className="container mx-auto px-4 py-4">
+      <nav className="container mx-auto px-4 py-6">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="flex items-center" onClick={() => window.scrollTo(0, 0)}>
-            <div className="text-3xl font-bold text-orange-600">
-              🍜 <span className="text-gray-800">Momo Palace</span>
+            <div className="text-4xl font-bold">
+              <span className="text-6xl">🍜</span> 
+              <span className="brand-title text-dark-accent ml-2 text-3xl">Momo Palace</span>
             </div>
           </Link>
 
@@ -66,37 +48,37 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-8">
             <button 
               onClick={() => handleNavClick('home')} 
-              className="text-gray-700 hover:text-orange-600 font-medium transition-colors"
+              className="text-dark-text hover:text-dark-accent font-medium transition-colors duration-300 text-lg"
             >
               Home
             </button>
             <button 
               onClick={() => handleNavClick('menu')} 
-              className="text-gray-700 hover:text-orange-600 font-medium transition-colors"
+              className="text-dark-text hover:text-dark-accent font-medium transition-colors duration-300 text-lg"
             >
               Menu
             </button>
             <button 
               onClick={() => handleNavClick('branches')} 
-              className="text-gray-700 hover:text-orange-600 font-medium transition-colors"
+              className="text-dark-text hover:text-dark-accent font-medium transition-colors duration-300 text-lg"
             >
               Branches
             </button>
             <button 
               onClick={() => handleNavClick('about')} 
-              className="text-gray-700 hover:text-orange-600 font-medium transition-colors"
+              className="text-dark-text hover:text-dark-accent font-medium transition-colors duration-300 text-lg"
             >
               About Us
             </button>
             <button 
               onClick={() => handleNavClick('contact')} 
-              className="text-gray-700 hover:text-orange-600 font-medium transition-colors"
+              className="text-dark-text hover:text-dark-accent font-medium transition-colors duration-300 text-lg"
             >
               Contact
             </button>
             <button 
               onClick={handleOrderNow}
-              className="bg-orange-600 text-white px-6 py-2 rounded-full hover:bg-orange-700 transition-colors font-medium"
+              className="bg-gradient-to-r from-dark-accent to-dark-accent-dark text-white px-8 py-3 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300 font-semibold text-lg"
             >
               Order Now
             </button>
@@ -104,50 +86,50 @@ const Header = () => {
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden text-gray-700"
+            className="md:hidden text-dark-text hover:text-dark-accent transition-colors"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t">
-            <div className="flex flex-col space-y-4 pt-4">
+          <div className="md:hidden mt-6 pb-6 border-t border-dark-border">
+            <div className="flex flex-col space-y-6 pt-6">
               <button 
                 onClick={() => handleNavClick('home')} 
-                className="text-gray-700 hover:text-orange-600 font-medium text-left"
+                className="text-dark-text hover:text-dark-accent font-medium text-left text-lg transition-colors"
               >
                 Home
               </button>
               <button 
                 onClick={() => handleNavClick('menu')} 
-                className="text-gray-700 hover:text-orange-600 font-medium text-left"
+                className="text-dark-text hover:text-dark-accent font-medium text-left text-lg transition-colors"
               >
                 Menu
               </button>
               <button 
                 onClick={() => handleNavClick('branches')} 
-                className="text-gray-700 hover:text-orange-600 font-medium text-left"
+                className="text-dark-text hover:text-dark-accent font-medium text-left text-lg transition-colors"
               >
                 Branches
               </button>
               <button 
                 onClick={() => handleNavClick('about')} 
-                className="text-gray-700 hover:text-orange-600 font-medium text-left"
+                className="text-dark-text hover:text-dark-accent font-medium text-left text-lg transition-colors"
               >
                 About Us
               </button>
               <button 
                 onClick={() => handleNavClick('contact')} 
-                className="text-gray-700 hover:text-orange-600 font-medium text-left"
+                className="text-dark-text hover:text-dark-accent font-medium text-left text-lg transition-colors"
               >
                 Contact
               </button>
               <button 
                 onClick={handleOrderNow}
-                className="bg-orange-600 text-white px-6 py-2 rounded-full w-fit font-medium"
+                className="bg-gradient-to-r from-dark-accent to-dark-accent-dark text-white px-8 py-3 rounded-full w-fit font-semibold text-lg transition-all duration-300"
               >
                 Order Now
               </button>

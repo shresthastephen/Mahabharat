@@ -11,6 +11,7 @@ import PatanBranch from "./pages/PatanBranch";
 import BhaktapurBranch from "./pages/BhaktapurBranch";
 import PokharaBranch from "./pages/PokharaBranch";
 import OrderPage from "./pages/OrderPage";
+import BranchesPage from "./pages/BranchesPage";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +23,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/branches" element={<BranchesPage />} />
           <Route path="/branch/thamel" element={<ThamelBranch />} />
           <Route path="/branch/patan" element={<PatanBranch />} />
           <Route path="/branch/bhaktapur" element={<BhaktapurBranch />} />
