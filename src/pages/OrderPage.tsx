@@ -1,5 +1,5 @@
 
-import { ShoppingBag } from 'lucide-react';
+import { ShoppingBag, MapPin } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
@@ -73,7 +73,7 @@ const OrderPage = () => {
                   <img
                     src={branch.image}
                     alt={branch.name}
-                    className="w-full h-48 object-cover"
+                    className="w-full h-64 object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                 </div>
@@ -95,9 +95,13 @@ const OrderPage = () => {
                     </div>
                   </div>
                   
-                  <div className="space-y-3">
-                    <button className="w-full bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors font-semibold">
+                  <div className="flex gap-3">
+                    <button className="flex-1 bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors font-semibold">
                       Order Now
+                    </button>
+                    <button className="flex items-center gap-2 bg-gray-100 text-gray-700 px-4 py-3 rounded-lg hover:bg-gray-200 transition-colors font-semibold">
+                      <MapPin size={16} />
+                      Get Directions
                     </button>
                   </div>
                 </div>
