@@ -1,4 +1,3 @@
-
 import { ShoppingBag, MapPin } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -99,7 +98,7 @@ const OrderPage = () => {
                     <button className="flex-1 bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors font-semibold">
                       Order Now
                     </button>
-                    <button className="flex items-center gap-2 bg-gray-100 text-gray-700 px-4 py-3 rounded-lg hover:bg-gray-200 transition-colors font-semibold">
+                    <button className="flex-1 flex items-center justify-center gap-2 bg-gray-100 text-gray-700 px-4 py-3 rounded-lg hover:bg-gray-200 transition-colors font-semibold">
                       <MapPin size={16} />
                       Get Directions
                     </button>

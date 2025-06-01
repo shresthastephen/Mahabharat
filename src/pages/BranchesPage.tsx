@@ -1,4 +1,3 @@
-
 import { MapPin, Phone, Clock } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import Header from '@/components/Header';
@@ -89,7 +88,7 @@ const BranchesPage = () => {
                   <img
                     src={branch.image}
                     alt={`${branch.name} - Authentic Nepalese Momo Restaurant`}
-                    className="w-full h-48 object-cover"
+                    className="w-full h-64 object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                 </div>
