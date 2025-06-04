@@ -45,6 +45,26 @@ const BranchSection = () => {
       hours: "10:30 AM - 9:30 PM",
       isMain: false,
       route: "/branch/pokhara"
+    },
+    {
+      id: 5,
+      name: "Chitwan Branch",
+      location: "Sauraha, Chitwan",
+      phone: "+977-56-567894", 
+      image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&h=300&fit=crop",
+      hours: "10:00 AM - 9:00 PM",
+      isMain: false,
+      route: "/branch/chitwan"
+    },
+    {
+      id: 6,
+      name: "Butwal Branch",
+      location: "Traffic Chowk, Butwal",
+      phone: "+977-71-567895", 
+      image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=300&fit=crop",
+      hours: "10:00 AM - 9:30 PM",
+      isMain: false,
+      route: "/branch/butwal"
     }
   ];
 
@@ -65,15 +85,15 @@ const BranchSection = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {branches.map((branch) => (
             <div 
               key={branch.id} 
               onClick={() => handleBranchClick(branch.route)}
-              className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 relative cursor-pointer border border-gray-200 hover:border-green-500"
+              className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 relative cursor-pointer border border-gray-200 hover:border-green-500"
             >
               {branch.isMain && (
-                <div className="absolute top-4 left-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold z-10 font-inter">
+                <div className="absolute top-3 left-3 bg-green-600 text-white px-2 py-1 rounded-full text-xs font-semibold z-10 font-inter">
                   Main Branch
                 </div>
               )}
@@ -82,33 +102,33 @@ const BranchSection = () => {
                 <img
                   src={branch.image}
                   alt={`${branch.name} - Authentic Nepalese Momo Restaurant`}
-                  className="w-full h-64 object-cover"
+                  className="w-full h-48 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
               </div>
               
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-3 font-nunito">{branch.name}</h3>
+              <div className="p-4">
+                <h3 className="text-lg font-bold text-gray-800 mb-2 font-nunito">{branch.name}</h3>
                 
-                <div className="space-y-3">
+                <div className="space-y-2">
                   <div className="flex items-start gap-2">
-                    <MapPin className="text-green-600 mt-1 flex-shrink-0" size={16} />
-                    <span className="text-gray-600 text-sm font-inter">{branch.location}</span>
+                    <MapPin className="text-green-600 mt-0.5 flex-shrink-0" size={14} />
+                    <span className="text-gray-600 text-xs font-inter">{branch.location}</span>
                   </div>
                   
                   <div className="flex items-center gap-2">
-                    <Phone className="text-green-600 flex-shrink-0" size={16} />
-                    <span className="text-gray-600 text-sm font-inter">{branch.phone}</span>
+                    <Phone className="text-green-600 flex-shrink-0" size={14} />
+                    <span className="text-gray-600 text-xs font-inter">{branch.phone}</span>
                   </div>
                   
                   <div className="flex items-center gap-2">
-                    <Clock className="text-green-600 flex-shrink-0" size={16} />
-                    <span className="text-gray-600 text-sm font-inter">{branch.hours}</span>
+                    <Clock className="text-green-600 flex-shrink-0" size={14} />
+                    <span className="text-gray-600 text-xs font-inter">{branch.hours}</span>
                   </div>
                 </div>
                 
-                <div className="mt-4 pt-4 border-t border-gray-200">
-                  <button className="w-full bg-gradient-to-r from-green-600 to-green-700 text-white px-4 py-2 rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-300 font-medium font-nunito">
+                <div className="mt-3 pt-3 border-t border-gray-200">
+                  <button className="w-full bg-gradient-to-r from-green-600 to-green-700 text-white px-3 py-2 rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-300 font-medium font-nunito text-sm">
                     View Details
                   </button>
                 </div>
