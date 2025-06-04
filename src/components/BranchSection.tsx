@@ -25,16 +25,31 @@ const BranchSection = () => {
       hours: "10:00 AM - 9:30 PM",
       isMain: false,
       route: "/branch/patan"
+    },
+    {
+      id: 3,
+      name: "Bhaktapur Branch",
+      location: "Durbar Square, Bhaktapur", 
+      phone: "+977-1-4567892",
+      image: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=400&h=300&fit=crop",
+      hours: "11:00 AM - 9:00 PM",
+      isMain: false,
+      route: "/branch/bhaktapur"
+    },
+    {
+      id: 4,
+      name: "Pokhara Branch",
+      location: "Lakeside, Pokhara",
+      phone: "+977-61-567893", 
+      image: "https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?w=400&h=300&fit=crop",
+      hours: "10:30 AM - 9:30 PM",
+      isMain: false,
+      route: "/branch/pokhara"
     }
   ];
 
   const handleBranchClick = (route: string) => {
     navigate(route);
-    window.scrollTo(0, 0);
-  };
-
-  const handleViewMore = () => {
-    navigate('/branches');
     window.scrollTo(0, 0);
   };
 
@@ -50,7 +65,7 @@ const BranchSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {branches.map((branch) => (
             <div 
               key={branch.id} 
@@ -67,7 +82,7 @@ const BranchSection = () => {
                 <img
                   src={branch.image}
                   alt={`${branch.name} - Authentic Nepalese Momo Restaurant`}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-64 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
               </div>
@@ -100,15 +115,6 @@ const BranchSection = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="text-center mt-12">
-          <button 
-            onClick={handleViewMore}
-            className="bg-gradient-to-r from-green-600 to-green-700 text-white px-8 py-4 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300 font-semibold text-lg font-nunito"
-          >
-            View More Branches
-          </button>
         </div>
       </div>
     </section>
