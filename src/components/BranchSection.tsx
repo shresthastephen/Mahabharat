@@ -8,62 +8,56 @@ const BranchSection = () => {
   const branches = [
     {
       id: 1,
-      name: "Thamel Branch",
-      location: "Thamel, Kathmandu",
+      name: "Lagankhel Branch",
+      location: "Lagankhel Branch",
       phone: "+977-1-4567890",
       image: "https://images.unsplash.com/photo-1460574283810-2aab119d8511?w=400&h=300&fit=crop",
-      hours: "10:00 AM - 10:00 PM",
-      isMain: true,
+      hours: "10:00 AM - 9:00 PM",
       route: "/branch/thamel"
     },
     {
       id: 2,
       name: "Patan Branch", 
-      location: "Jawalakhel, Patan",
+      location: "Patan Dhoka, Lalitpur",
       phone: "+977-1-4567891",
       image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&h=300&fit=crop",
-      hours: "10:00 AM - 9:30 PM",
-      isMain: false,
+      hours: "10:00 AM - 8:00 PM",
       route: "/branch/patan"
     },
     {
       id: 3,
-      name: "Bhaktapur Branch",
-      location: "Durbar Square, Bhaktapur", 
+      name: "Gwarko Branch",
+      location: "Gwarko, Lalitpur", 
       phone: "+977-1-4567892",
       image: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=400&h=300&fit=crop",
-      hours: "11:00 AM - 9:00 PM",
-      isMain: false,
+      hours: "11:00 AM - 7:30 PM",
       route: "/branch/bhaktapur"
     },
     {
       id: 4,
-      name: "Pokhara Branch",
-      location: "Lakeside, Pokhara",
+      name: "Pulchowk Branch",
+      location: "Harihar Bhawan, Lalitpur",
       phone: "+977-61-567893", 
       image: "https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?w=400&h=300&fit=crop",
-      hours: "10:30 AM - 9:30 PM",
-      isMain: false,
+      hours: "8:30 AM - 6:30 PM",
       route: "/branch/pokhara"
     },
     {
       id: 5,
-      name: "Chitwan Branch",
-      location: "Sauraha, Chitwan",
+      name: "Putalisadak Branch",
+      location: "Putalisadak, Kathmandu",
       phone: "+977-56-567894", 
       image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&h=300&fit=crop",
-      hours: "10:00 AM - 9:00 PM",
-      isMain: false,
+      hours: "11:00 AM - 6:30 PM",
       route: "/branch/chitwan"
     },
     {
       id: 6,
-      name: "Butwal Branch",
-      location: "Traffic Chowk, Butwal",
+      name: "Sundarijal, Branch",
+      location: "Nayapati pipalbot, Jorpati, Ktm",
       phone: "+977-71-567895", 
       image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=300&fit=crop",
       hours: "10:00 AM - 9:30 PM",
-      isMain: false,
       route: "/branch/butwal"
     }
   ];
@@ -92,11 +86,7 @@ const BranchSection = () => {
               onClick={() => handleBranchClick(branch.route)}
               className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 relative cursor-pointer border border-gray-200 hover:border-green-500"
             >
-              {branch.isMain && (
-                <div className="absolute top-3 left-3 bg-green-600 text-white px-2 py-1 rounded-full text-xs font-semibold z-10 font-inter">
-                  Main Branch
-                </div>
-              )}
+          
               
               <div className="relative">
                 <img

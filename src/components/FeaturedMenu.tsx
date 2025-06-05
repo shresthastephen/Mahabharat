@@ -3,22 +3,22 @@ const FeaturedMenu = () => {
   const menuItems = [
     {
       id: 1,
-      name: "Chicken Momo",
-      description: "Traditional steamed dumplings filled with seasoned chicken and fresh herbs",
-      image: "https://images.unsplash.com/photo-1496412705862-e0088f16f791?w=300&h=200&fit=crop",
+      name: "Buff Momo",
+      description: "Traditional buffalo meat momos with authentic Nepalese flavors",
+      image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=300&h=200&fit=crop",
     },
     {
       id: 2,
+      name: "Chicken Momo",
+      description: "Traditional steamed momo(dumplings) filled with seasoned chicken and fresh herbs",
+      image: "https://images.unsplash.com/photo-1496412705862-e0088f16f791?w=300&h=200&fit=crop",
+    },
+    {
+      id: 3,
       name: "Vegetable Momo",
       description: "Healthy steamed momos packed with fresh vegetables and aromatic spices",
       image: "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=300&h=200&fit=crop",
     },
-    {
-      id: 3,
-      name: "Buff Momo",
-      description: "Traditional buffalo meat momos with authentic Nepalese flavors",
-      image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=300&h=200&fit=crop",
-    }
   ];
 
   return (

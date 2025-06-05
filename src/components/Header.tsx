@@ -64,8 +64,8 @@ const Header = () => {
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 lg:py-6" ref={mobileMenuRef}>
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center" onClick={() => window.scrollTo(0, 0)}>
-            <div className="text-2xl sm:text-3xl font-bold brand-title text-green-600">
-              Momo Palace
+            <div className="text-xl sm:text-2xl font-bold brand-title text-green-600">
+              Shree Bagalamukhi Swadista Mahabharat
             </div>
           </Link>
 

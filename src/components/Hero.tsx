@@ -48,15 +48,15 @@ const Hero = () => {
             
             <div className="flex items-center gap-8 pt-4">
               <div className="text-center">
-                <div className="text-3xl font-bold font-nunito">500+</div>
+                <div className="text-3xl font-bold font-nunito">1000+</div>
                 <div className="text-emerald-200 text-sm font-inter">Happy Customers</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold font-nunito">15+</div>
-                <div className="text-emerald-200 text-sm font-inter">Momo Varieties</div>
+                <div className="text-3xl font-bold font-nunito">10+</div>
+                <div className="text-emerald-200 text-sm font-inter">Varieties</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold font-nunito">4.9</div>
+                <div className="text-3xl font-bold font-nunito">4.7</div>
                 <div className="text-emerald-200 text-sm font-inter">Rating</div>
               </div>
             </div>

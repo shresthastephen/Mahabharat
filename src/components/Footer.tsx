@@ -45,12 +45,12 @@ const Footer = () => {
           <div className="space-y-6">
             <div className="flex items-center">
               <div className="text-3xl font-bold brand-title text-green-400 font-playfair">
-                Momo Palace
+                Shree Bagalamukhi Swadista Mahabharat
               </div>
             </div>
             <p className="text-gray-300 leading-relaxed font-inter">
-              Serving authentic Nepalese momos since 2010. Experience the true taste of Nepal 
-              with our handcrafted dumplings made with love and traditional recipes.
+              Serving authentic Nepalese momos since 2040 A.D. Experience the true taste of Nepal 
+              with our handcrafted momo(dumplings) made with love and traditional recipes.
             </p>
           </div>
 
@@ -70,12 +70,9 @@ const Footer = () => {
           <div className="space-y-6">
             <h3 className="text-xl font-semibold text-white font-nunito">Our Specialties</h3>
             <ul className="space-y-3">
-              <li><button onClick={() => handleNavClick('menu')} className="text-gray-300 hover:text-green-400 transition-colors font-inter">Steamed Momos</button></li>
-              <li><button onClick={() => handleNavClick('menu')} className="text-gray-300 hover:text-green-400 transition-colors font-inter">Jhol Momos</button></li>
+              <li><button onClick={() => handleNavClick('menu')} className="text-gray-300 hover:text-green-400 transition-colors font-inter">Buff Momo</button></li>
               <li><button onClick={() => handleNavClick('menu')} className="text-gray-300 hover:text-green-400 transition-colors font-inter">Chicken Momo</button></li>
               <li><button onClick={() => handleNavClick('menu')} className="text-gray-300 hover:text-green-400 transition-colors font-inter">Vegetable Momo</button></li>
-              <li><button onClick={() => handleNavClick('menu')} className="text-gray-300 hover:text-green-400 transition-colors font-inter">Buff Momo</button></li>
-              <li><button onClick={() => handleNavClick('menu')} className="text-gray-300 hover:text-green-400 transition-colors font-inter">Chow Mein</button></li>
             </ul>
           </div>
 
@@ -90,8 +87,8 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <Clock className="text-green-400 mt-1 flex-shrink-0" size={20} />
                 <div>
-                  <p className="text-gray-300 font-inter">Mon - Sun</p>
-                  <p className="text-gray-300 font-inter">10:00 AM - 10:00 PM</p>
+                  <p className="text-gray-300 font-inter">Sun-Sat</p>
+                  <p className="text-gray-300 font-inter">9:00 AM - 9:00 PM</p>
                 </div>
               </div>
               <button 
