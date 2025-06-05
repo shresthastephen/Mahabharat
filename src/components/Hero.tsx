@@ -1,4 +1,3 @@
-
 import { ArrowRight, Star } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
@@ -82,9 +81,6 @@ const Hero = () => {
             {/* Floating elements */}
             <div className="absolute -top-4 -right-4 bg-teal-400 text-white px-4 py-2 rounded-full text-sm font-semibold animate-bounce font-inter">
               Hot & Fresh! 🔥
-            </div>
-            <div className="absolute -bottom-4 -left-4 bg-yellow-400 text-gray-800 px-4 py-2 rounded-full text-sm font-semibold font-inter">
-              Rs. 180 only
             </div>
           </div>
         </div>
