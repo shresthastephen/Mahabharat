@@ -1,5 +1,5 @@
 
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { Mail, Clock, Phone } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
@@ -11,13 +11,23 @@ const Footer = () => {
       setTimeout(() => {
         const element = document.getElementById(sectionId);
         if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
+          const headerHeight = 80;
+          const elementPosition = element.offsetTop - headerHeight;
+          window.scrollTo({
+            top: elementPosition,
+            behavior: 'smooth'
+          });
         }
       }, 100);
     } else {
       const element = document.getElementById(sectionId);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        const headerHeight = 80;
+        const elementPosition = element.offsetTop - headerHeight;
+        window.scrollTo({
+          top: elementPosition,
+          behavior: 'smooth'
+        });
       }
     }
   };
@@ -73,17 +83,6 @@ const Footer = () => {
           <div className="space-y-6">
             <h3 className="text-xl font-semibold text-white font-nunito">Contact Info</h3>
             <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <MapPin className="text-green-400 mt-1 flex-shrink-0" size={20} />
-                <div>
-                  <p className="text-gray-300 font-inter">Thamel, Kathmandu</p>
-                  <p className="text-gray-300 font-inter">Nepal 44600</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <Phone className="text-green-400 flex-shrink-0" size={20} />
-                <p className="text-gray-300 font-inter">+977-1-4567890</p>
-              </div>
               <div className="flex items-center gap-3">
                 <Mail className="text-green-400 flex-shrink-0" size={20} />
                 <p className="text-gray-300 font-inter">info@momopalace.com.np</p>
@@ -95,6 +94,13 @@ const Footer = () => {
                   <p className="text-gray-300 font-inter">10:00 AM - 10:00 PM</p>
                 </div>
               </div>
+              <button 
+                onClick={handleOrderNow}
+                className="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition-colors font-inter font-medium"
+              >
+                <Phone size={18} />
+                Call Us
+              </button>
             </div>
           </div>
         </div>

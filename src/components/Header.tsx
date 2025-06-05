@@ -1,11 +1,12 @@
 
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Menu, X } from 'lucide-react';
 import { useNavigate, Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
 
   const handleOrderNow = () => {
     navigate('/order');
@@ -19,7 +20,7 @@ const Header = () => {
       setTimeout(() => {
         const element = document.getElementById(sectionId);
         if (element) {
-          const headerHeight = 80; // Approximate header height
+          const headerHeight = 80;
           const elementPosition = element.offsetTop - headerHeight;
           window.scrollTo({
             top: elementPosition,
@@ -30,7 +31,7 @@ const Header = () => {
     } else {
       const element = document.getElementById(sectionId);
       if (element) {
-        const headerHeight = 80; // Approximate header height
+        const headerHeight = 80;
         const elementPosition = element.offsetTop - headerHeight;
         window.scrollTo({
           top: elementPosition,
@@ -41,9 +42,26 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
+  // Handle click outside to close mobile menu
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target as Node) && isMenuOpen) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    if (isMenuOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isMenuOpen]);
+
   return (
     <header className="bg-white shadow-lg sticky top-0 z-50 border-b border-gray-200">
-      <nav className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 lg:py-6">
+      <nav className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 lg:py-6" ref={mobileMenuRef}>
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center" onClick={() => window.scrollTo(0, 0)}>
             <div className="text-2xl sm:text-3xl font-bold brand-title text-green-600">
