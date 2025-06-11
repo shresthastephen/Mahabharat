@@ -4,7 +4,7 @@ const FeaturedMenu = () => {
     {
       id: 1,
       name: "Buff Momo",
-      description: "Traditional buffalo meat momos with authentic Nepalese flavors",
+      description: "Traditional buffalo meat momo with authentic Nepalese flavors",
       image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=300&h=200&fit=crop",
     },
     {
@@ -16,7 +16,7 @@ const FeaturedMenu = () => {
     {
       id: 3,
       name: "Vegetable Momo",
-      description: "Healthy steamed momos packed with fresh vegetables and aromatic spices",
+      description: "Healthy steamed momo packed with fresh vegetables and aromatic spices",
       image: "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=300&h=200&fit=crop",
     },
   ];
@@ -29,7 +29,7 @@ const FeaturedMenu = () => {
             Our Featured Menu
           </h2>
           <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto font-inter">
-            Discover our signature momos, each crafted with authentic recipes passed down through generations
+            Discover our signature momo, each crafted with authentic recipes passed down through generations
           </p>
         </div>
 

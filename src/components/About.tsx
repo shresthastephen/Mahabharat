@@ -45,7 +45,7 @@ const About = () => {
                   Shree Bagalamukhi Swadista Mahabharat Mo:Mo: Centre{" "}
                 </span>
                 , where tradition meets taste. Established in 2040 B.S (1982
-                A.D), we've been serving authentic Nepalese momos that remind
+                A.D), we've been serving authentic Nepalese momo that remind
                 you of home-cooked meals. Our journey began with a simple
                 mission: to share the incredible flavors of Nepal with food
                 lovers.
@@ -81,7 +81,7 @@ const About = () => {
               <div className="space-y-4">
                 <img
                   src="https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=300&h=200&fit=crop"
-                  alt="Chef preparing momos"
+                  alt="Chef preparing momo"
                   className="w-full h-48 object-cover rounded-2xl shadow-lg"
                 />
                 <img
@@ -111,7 +111,7 @@ const About = () => {
             </div>
             <div className="absolute -top-8 -right-8 bg-emerald-600 text-white p-6 rounded-2xl shadow-xl">
               <div className="text-3xl font-bold">1000+</div>
-              <div className="text-emerald-100 text-sm">Momos Daily</div>
+              <div className="text-emerald-100 text-sm">Momo Daily</div>
             </div>
           </div>
         </div>

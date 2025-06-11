@@ -29,11 +29,11 @@ const Hero = () => {
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight font-nunito">
               Taste the 
               <span className="block text-teal-300">Authentic</span>
-              <span className="block">Momos</span>
+              <span className="block">Momo</span>
             </h1>
             
             <p className="text-lg md:text-xl text-emerald-100 leading-relaxed max-w-lg font-inter">
-              Experience the rich flavors of traditional Nepalese momos, handcrafted with love and served fresh from our kitchen to your table.
+              Experience the rich flavors of traditional Nepalese momo, handcrafted with love and served fresh from our kitchen to your table.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">

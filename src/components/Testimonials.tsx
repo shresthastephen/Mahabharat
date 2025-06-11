@@ -7,7 +7,7 @@ const Testimonials = () => {
       name: "Denish Maharjan",
       location: "Kathmandu",
       rating: 5,
-      text: "Absolutely the best momos in Nepal! The Lagankhel branch never misses — consistently delicious and my all-time favorite.",
+      text: "Absolutely the best momo in Nepal! The Lagankhel branch never misses — consistently delicious and my all-time favorite.",
       image:
         "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
     },
@@ -52,7 +52,7 @@ const Testimonials = () => {
       name: "Lisa Gurung",
       location: "Pokhara",
       rating: 4,
-      text: "The vibe is just right, and the momos? Absolutely delicious — top-notch quality all around!",
+      text: "The vibe is just right, and the momo? Absolutely delicious — top-notch quality all around!",
       image:
         "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face",
     },
