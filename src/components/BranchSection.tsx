@@ -13,7 +13,7 @@ const BranchSection = () => {
       phone: "+977-1-4567890",
       image: "https://images.unsplash.com/photo-1460574283810-2aab119d8511?w=400&h=300&fit=crop",
       hours: "10:00 AM - 9:00 PM",
-      route: "/branch/thamel"
+      route: "/branch/lagankhel"
     },
     {
       id: 2,
@@ -31,7 +31,7 @@ const BranchSection = () => {
       phone: "+977-1-4567892",
       image: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=400&h=300&fit=crop",
       hours: "11:00 AM - 7:30 PM",
-      route: "/branch/bhaktapur"
+      route: "/branch/gwarko"
     },
     {
       id: 4,
@@ -40,7 +40,7 @@ const BranchSection = () => {
       phone: "+977-61-567893", 
       image: "https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?w=400&h=300&fit=crop",
       hours: "8:30 AM - 6:30 PM",
-      route: "/branch/pokhara"
+      route: "/branch/pulchowk"
     },
     {
       id: 5,
@@ -49,7 +49,7 @@ const BranchSection = () => {
       phone: "+977-56-567894", 
       image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&h=300&fit=crop",
       hours: "11:00 AM - 6:30 PM",
-      route: "/branch/chitwan"
+      route: "/branch/putalisadak"
     },
     {
       id: 6,
@@ -58,7 +58,7 @@ const BranchSection = () => {
       phone: "+977-71-567895", 
       image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=300&fit=crop",
       hours: "10:00 AM - 9:30 PM",
-      route: "/branch/butwal"
+      route: "/branch/sundarijal"
     }
   ];
 

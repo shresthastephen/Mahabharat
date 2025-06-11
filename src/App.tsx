@@ -6,10 +6,12 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import ThamelBranch from "./pages/ThamelBranch";
+import LagankhelBranch from "./pages/LagankhelBranch";
 import PatanBranch from "./pages/PatanBranch";
-import BhaktapurBranch from "./pages/BhaktapurBranch";
-import PokharaBranch from "./pages/PokharaBranch";
+import PulchowkBranch from "./pages/PulchowkBranch";
+import GwarkoBranch from "./pages/GwarkoBranch";
+import PutalisadakBranch from "./pages/PutalisadakBranch";
+import SundarijalBranch from "./pages/SundarijalBranch";
 import OrderPage from "./pages/OrderPage";
 import BranchesPage from "./pages/BranchesPage";
 
@@ -24,10 +26,12 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/branches" element={<BranchesPage />} />
-          <Route path="/branch/thamel" element={<ThamelBranch />} />
+          <Route path="/branch/lagankhel" element={<LagankhelBranch />} />
           <Route path="/branch/patan" element={<PatanBranch />} />
-          <Route path="/branch/bhaktapur" element={<BhaktapurBranch />} />
-          <Route path="/branch/pokhara" element={<PokharaBranch />} />
+          <Route path="/branch/pulchowk" element={<PulchowkBranch />} />
+          <Route path="/branch/gwarko" element={<GwarkoBranch />} />
+          <Route path="/branch/putalisadak" element={<PutalisadakBranch />} />
+          <Route path="/branch/sundarijal" element={<SundarijalBranch />} />
           <Route path="/order" element={<OrderPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

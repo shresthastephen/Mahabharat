@@ -29,7 +29,7 @@ const Hero = () => {
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight font-nunito">
               Taste the 
               <span className="block text-teal-300">Authentic</span>
-              <span className="block">Momo</span>
+              <span className="block">Mo:Mo:</span>
             </h1>
             
             <p className="text-lg md:text-xl text-emerald-100 leading-relaxed max-w-lg font-inter">
@@ -68,11 +68,11 @@ const Hero = () => {
               <div className="bg-white rounded-3xl p-8 shadow-2xl">
                 <img 
                   src="https://images.unsplash.com/photo-1496412705862-e0088f16f791?w=500&h=400&fit=crop"
-                  alt="Delicious Momos"
+                  alt="Delicious Momo"
                   className="w-full h-80 object-cover rounded-2xl"
                 />
                 <div className="mt-4 text-center">
-                  <h3 className="text-2xl font-bold text-gray-800 font-nunito">Steamed Momos</h3>
+                  <h3 className="text-2xl font-bold text-gray-800 font-nunito">Steamed Momo</h3>
                   <p className="text-gray-600 font-inter">Fresh • Authentic • Delicious</p>
                 </div>
               </div>

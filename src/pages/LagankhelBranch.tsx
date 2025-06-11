@@ -1,30 +1,18 @@
+import { MapPin, Phone, Clock, Star } from "lucide-react";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
-import { MapPin, Phone, Clock, Star } from 'lucide-react';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-
-const ThamelBranch = () => {
+const LagankhelBranch = () => {
   const galleryImages = [
     "https://images.unsplash.com/photo-1460574283810-2aab119d8511?w=400&h=300&fit=crop",
     "https://images.unsplash.com/photo-1496412705862-e0088f16f791?w=400&h=300&fit=crop",
     "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=400&h=300&fit=crop",
     "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop",
     "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&h=300&fit=crop"
+    "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&h=300&fit=crop",
   ];
 
-  const menuItems = [
-    { name: "Steam Momos (Chicken)", price: "Rs. 180" },
-    { name: "Steam Momos (Buff)", price: "Rs. 160" },
-    { name: "Steam Momos (Veg)", price: "Rs. 140" },
-    { name: "Fried Momos (Chicken)", price: "Rs. 200" },
-    { name: "Fried Momos (Buff)", price: "Rs. 180" },
-    { name: "Jhol Momos (Chicken)", price: "Rs. 220" },
-    { name: "Chow Mein (Chicken)", price: "Rs. 250" },
-    { name: "Thukpa (Chicken)", price: "Rs. 280" },
-    { name: "Sel Roti", price: "Rs. 120" },
-    { name: "Gundruk Soup", price: "Rs. 150" }
-  ];
+  const menuItems = [{ name: "Buff Momo", price: "Rs. 160" }];
 
   return (
     <div className="min-h-screen">
@@ -34,22 +22,20 @@ const ThamelBranch = () => {
       <section className="bg-gradient-to-r from-green-600 to-green-700 text-white py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl">
-            <div className="flex items-center gap-2 mb-4">
-              <span className="bg-green-400 text-gray-800 px-3 py-1 rounded-full text-sm font-semibold">
-                Main Branch
-              </span>
-            </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Thamel Branch</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              Lagankhel Branch
+            </h1>
             <p className="text-xl text-green-100 mb-8">
-              Our flagship location in the heart of Kathmandu's tourist district, serving authentic momos since 2010.
+              Our flagship location in the heart of populated Lalitpur district,
+              serving authentic momo since 2040 BS.
             </p>
-            
+
             <div className="grid md:grid-cols-3 gap-6">
               <div className="flex items-center gap-3">
                 <MapPin className="text-green-300" size={20} />
                 <div>
                   <div className="font-semibold">Location</div>
-                  <div className="text-green-100">Thamel, Kathmandu</div>
+                  <div className="text-green-100">Lagankhel, Lalitpur</div>
                 </div>
               </div>
               <div className="flex items-center gap-3">
@@ -63,7 +49,7 @@ const ThamelBranch = () => {
                 <Clock className="text-green-300" size={20} />
                 <div>
                   <div className="font-semibold">Hours</div>
-                  <div className="text-green-100">10:00 AM - 10:00 PM</div>
+                  <div className="text-green-100">10:00 AM - 9:00 PM</div>
                 </div>
               </div>
             </div>
@@ -76,16 +62,20 @@ const ThamelBranch = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <div>
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">About Thamel Branch</h2>
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">
+                About Lagankhel Branch
+              </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Located in the bustling heart of Thamel, our main branch has been serving locals and tourists 
-                alike for over a decade. This is where our journey began, and it remains the cornerstone of 
-                our momo empire.
+                Bagalamukhi Swadishta Mahabharat Mo:Mo: Center is a beloved
+                local gem in Lagankhel, serving authentic, flavorful buff momo
+                for decades. Known for our hearty fillings, and spicy achhar,
+                our momo have earned a loyal following across the valley.
               </p>
               <p className="text-gray-600 leading-relaxed mb-6">
-                With our largest seating capacity and most extensive menu, the Thamel branch offers the full 
-                Momo Palace experience. From traditional steamed momos to innovative fusion varieties, 
-                every dish is prepared with the same love and authenticity that made us famous.
+                We're a small, cozy spot with a busy, but perfect for a quick
+                bite. While we don’t offer good parking and the space can get
+                warm during peak hours, our takeaway service is always
+                available.
               </p>
               <div className="flex items-center gap-2 text-green-500">
                 <Star className="fill-current" size={20} />
@@ -97,7 +87,7 @@ const ThamelBranch = () => {
               </div>
             </div>
             <div>
-              <img 
+              <img
                 src="https://images.unsplash.com/photo-1460574283810-2aab119d8511?w=600&h=400&fit=crop"
                 alt="Thamel Branch Interior"
                 className="w-full h-80 object-cover rounded-2xl shadow-lg"
@@ -111,18 +101,25 @@ const ThamelBranch = () => {
       <section className="py-16 bg-green-50">
         <div className="container mx-auto px-4">
           <div className="bg-white rounded-2xl shadow-lg p-8 max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Menu</h2>
-            
+            <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
+              Menu
+            </h2>
+
             <div className="grid gap-2 mb-6">
               <div className="grid grid-cols-2 gap-4 p-4 bg-green-100 rounded-lg font-semibold text-gray-800">
                 <div>Food Item</div>
                 <div className="text-right">Price</div>
               </div>
-              
+
               {menuItems.map((item, index) => (
-                <div key={index} className="grid grid-cols-2 gap-4 p-4 border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                <div
+                  key={index}
+                  className="grid grid-cols-2 gap-4 p-4 border-b border-gray-100 hover:bg-gray-50 transition-colors"
+                >
                   <div className="text-gray-700">{item.name}</div>
-                  <div className="text-right text-green-600 font-semibold">{item.price}</div>
+                  <div className="text-right text-green-600 font-semibold">
+                    {item.price}
+                  </div>
                 </div>
               ))}
             </div>
@@ -133,10 +130,15 @@ const ThamelBranch = () => {
       {/* Gallery Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">Gallery</h2>
+          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+            Gallery
+          </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {galleryImages.map((image, index) => (
-              <div key={index} className="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+              <div
+                key={index}
+                className="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+              >
                 <img
                   src={image}
                   alt={`Gallery image ${index + 1}`}
@@ -154,7 +156,8 @@ const ThamelBranch = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Visit Us Today!</h2>
           <p className="text-green-100 mb-8 max-w-2xl mx-auto">
-            Experience the authentic taste of Nepal at our Thamel branch. Perfect for families, friends, and food lovers.
+            Experience the authentic taste at our Lagankhel branch.
+            Perfect for families, friends, and food lovers.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-white text-green-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
@@ -172,4 +175,4 @@ const ThamelBranch = () => {
   );
 };
 
-export default ThamelBranch;
+export default LagankhelBranch;
