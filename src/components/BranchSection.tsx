@@ -2,6 +2,9 @@
 import { MapPin, Phone, Clock } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
+import lagankhel from "../assets/lagankhel/lagankhel.jpg"
+import patan from "../assets/patan/main.jpg"
+
 const BranchSection = () => {
   const navigate = useNavigate();
 
@@ -11,7 +14,7 @@ const BranchSection = () => {
       name: "Lagankhel Branch",
       location: "Lagankhel Branch",
       phone: "+977-1-4567890",
-      image: "https://images.unsplash.com/photo-1460574283810-2aab119d8511?w=400&h=300&fit=crop",
+      image: lagankhel,
       hours: "10:00 AM - 9:00 PM",
       route: "/branch/lagankhel"
     },
@@ -20,7 +23,7 @@ const BranchSection = () => {
       name: "Patan Branch", 
       location: "Patan Dhoka, Lalitpur",
       phone: "+977-1-4567891",
-      image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&h=300&fit=crop",
+      image: patan,
       hours: "10:00 AM - 8:00 PM",
       route: "/branch/patan"
     },

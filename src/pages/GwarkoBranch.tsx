@@ -14,16 +14,10 @@ const PokharaBranch = () => {
   ];
 
   const menuItems = [
-    { name: "Steam Momos (Chicken)", price: "Rs. 180" },
-    { name: "Steam Momos (Buff)", price: "Rs. 160" },
-    { name: "Steam Momos (Veg)", price: "Rs. 140" },
-    { name: "Lakeside Special Momos", price: "Rs. 280" },
-    { name: "Fried Momos (Chicken)", price: "Rs. 200" },
-    { name: "Jhol Momos (Chicken)", price: "Rs. 220" },
-    { name: "Mountain View Combo", price: "Rs. 350" },
-    { name: "Chow Mein (Chicken)", price: "Rs. 250" },
-    { name: "Thukpa (Chicken)", price: "Rs. 280" },
-    { name: "Sel Roti", price: "Rs. 120" }
+    { name: "Buff Momo", price: "Rs. 180" },
+    { name: "Chicken Momo", price: "Rs. 160" },
+    { name: "Veg Momo", price: "Rs. 140" },
+
   ];
 
   return (
@@ -33,7 +27,7 @@ const PokharaBranch = () => {
       <section className="bg-gradient-to-r from-green-600 to-green-700 text-white py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Pokhara Branch</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Gwarko Branch</h1>
             <p className="text-xl text-green-100 mb-8">
               Enjoy stunning mountain views while savoring authentic momos by the beautiful Phewa Lake.
             </p>
@@ -43,7 +37,7 @@ const PokharaBranch = () => {
                 <MapPin className="text-green-300" size={20} />
                 <div>
                   <div className="font-semibold">Location</div>
-                  <div className="text-green-100">Lakeside, Pokhara</div>
+                  <div className="text-green-100">Gwarko, Lalitpur</div>
                 </div>
               </div>
               <div className="flex items-center gap-3">
@@ -57,7 +51,7 @@ const PokharaBranch = () => {
                 <Clock className="text-green-300" size={20} />
                 <div>
                   <div className="font-semibold">Hours</div>
-                  <div className="text-green-100">10:30 AM - 9:30 PM</div>
+                  <div className="text-green-100">11:30 AM - 7:30 PM</div>
                 </div>
               </div>
             </div>
@@ -69,7 +63,7 @@ const PokharaBranch = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <div>
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">About Pokhara Branch</h2>
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">About Gwarko Branch</h2>
               <p className="text-gray-600 leading-relaxed mb-6">
                 Our newest addition to the Momo Center family, the Pokhara branch offers breathtaking views 
                 of the Annapurna range and Phewa Lake. Located in the heart of Lakeside, it's become a 

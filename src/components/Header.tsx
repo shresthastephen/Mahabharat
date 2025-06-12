@@ -65,7 +65,7 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center" onClick={() => window.scrollTo(0, 0)}>
             <div className="text-xl sm:text-2xl font-bold brand-title text-green-600">
-              Shree Bagalamukhi Swadista Mahabharat
+              Shree Bagalamukhi Swadista Mahabharat Mo:MO:
             </div>
           </Link>
 
