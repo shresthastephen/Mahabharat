@@ -95,7 +95,7 @@ const BranchSection = () => {
                 <img
                   src={branch.image}
                   alt={`${branch.name} - Authentic Nepalese Momo Restaurant`}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-72 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
               </div>
@@ -106,12 +106,12 @@ const BranchSection = () => {
                 <div className="space-y-2">
                   <div className="flex items-start gap-2">
                     <MapPin className="text-green-600 mt-0.5 flex-shrink-0" size={14} />
-                    <span className="text-gray-600 text-xs font-inter">{branch.location}</span>
+                    <span className="text-gray-600 text-sm font-inter">{branch.location}</span>
                   </div>
                   
                   <div className="flex items-center gap-2">
                     <Phone className="text-green-600 flex-shrink-0" size={14} />
-                    <span className="text-gray-600 text-xs font-inter">{branch.phone}</span>
+                    <span className="text-gray-600 text-sm font-inter">{branch.phone}</span>
                   </div>
                   
                   <div className="flex items-center gap-2">

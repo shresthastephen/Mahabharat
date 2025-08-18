@@ -82,7 +82,7 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <Mail className="text-green-400 flex-shrink-0" size={20} />
-                <p className="text-gray-300 font-inter">info@momopalace.com.np</p>
+                <p className="text-gray-300 font-inter">info@mahabharatmomo.com.np</p>
               </div>
               <div className="flex items-start gap-3">
                 <Clock className="text-green-400 mt-1 flex-shrink-0" size={20} />
@@ -106,13 +106,9 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm font-inter">
-              © 2024 Momo Palace Nepal. All rights reserved.
+              © 2024 Mahabharat MoMo | All rights reserved.
             </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="text-gray-400 hover:text-green-400 text-sm transition-colors font-inter">Privacy Policy</a>
-              <a href="#" className="text-gray-400 hover:text-green-400 text-sm transition-colors font-inter">Terms of Service</a>
-              <a href="#" className="text-gray-400 hover:text-green-400 text-sm transition-colors font-inter">Cookie Policy</a>
-            </div>
+          
           </div>
         </div>
       </div>
