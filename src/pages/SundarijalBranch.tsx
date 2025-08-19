@@ -33,9 +33,9 @@ const SundarijalBranch = () => {
       <section className="bg-gradient-to-r from-green-600 to-green-700 text-white py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Patan Branch</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Sundarijal Branch</h1>
             <p className="text-xl text-green-100 mb-8">
-              Nestled in the cultural heart of Patan, offering traditional momos with a heritage touch.
+             Located near Nayapati Pipalbot, Jorpati
             </p>
             
             <div className="grid md:grid-cols-3 gap-6">
@@ -43,7 +43,7 @@ const SundarijalBranch = () => {
                 <MapPin className="text-green-300" size={20} />
                 <div>
                   <div className="font-semibold">Location</div>
-                  <div className="text-green-100">Jawalakhel, Patan</div>
+                  <div className="text-green-100">Jorpati, Kathmandu</div>
                 </div>
               </div>
               <div className="flex items-center gap-3">
@@ -69,7 +69,7 @@ const SundarijalBranch = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <div>
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">About Patan Branch</h2>
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">About Sundarijal Branch</h2>
               <p className="text-gray-600 leading-relaxed mb-6">
                 Our Patan branch brings the authentic momo experience to the historic city of arts and crafts. 
                 Surrounded by ancient temples and traditional Newari architecture, this location offers a unique 

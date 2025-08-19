@@ -52,7 +52,7 @@ const PatanBranch = () => {
                 <Clock className="text-green-300" size={20} />
                 <div>
                   <div className="font-semibold">Hours</div>
-                  <div className="text-green-100">11:00 AM - 8:00 PM</div>
+                  <div className="text-green-100">10:00 AM - 8:00 PM</div>
                 </div>
               </div>
             </div>
@@ -158,10 +158,7 @@ const PatanBranch = () => {
       <section className="py-16 bg-green-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Visit Our Patan Branch!</h2>
-          <p className="text-green-100 mb-8 max-w-2xl mx-auto">
-            Discover the cultural heritage of Patan while enjoying our delicious
-            momo.
-          </p>
+        
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-white text-green-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
               Get Directions
