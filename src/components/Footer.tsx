@@ -49,7 +49,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-300 leading-relaxed font-inter">
-              Serving authentic Nepalese momo since 2040 A.D. Experience the true taste of Nepal 
+              Serving authentic Nepalese momo since 2040 B.S. Experience the true taste of Nepal 
               with our handcrafted momo(dumplings) made with love and traditional recipes.
             </p>
           </div>
@@ -62,7 +62,6 @@ const Footer = () => {
               <li><button onClick={() => handleNavClick('menu')} className="text-gray-300 hover:text-green-400 transition-colors font-inter">Menu</button></li>
               <li><button onClick={() => handleNavClick('branches')} className="text-gray-300 hover:text-green-400 transition-colors font-inter">Branches</button></li>
               <li><button onClick={() => handleNavClick('about')} className="text-gray-300 hover:text-green-400 transition-colors font-inter">About Us</button></li>
-              <li><button onClick={handleOrderNow} className="text-gray-300 hover:text-green-400 transition-colors font-inter">Online Order</button></li>
             </ul>
           </div>
 

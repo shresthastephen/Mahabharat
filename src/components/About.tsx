@@ -24,7 +24,7 @@ const About = () => {
       icon: Users,
       title: "Family Business",
       description:
-        "A proud family-owned restaurant serving the community since 2010",
+        "A proud family-owned restaurant serving the community since 2040",
     },
   ];
 

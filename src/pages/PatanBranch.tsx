@@ -13,9 +13,9 @@ const PatanBranch = () => {
   ];
 
   const menuItems = [
-    { name: "Buff Momo", price: "Rs. 150" },
-    { name: "Chicken Momo", price: "Rs. 170" },
-    { name: "Veg Momo", price: "Rs. 120" },
+    { name: "Buff Momo (Steam / Fried)", price: "Rs. 150 / Rs. 170" },
+    { name: "Chicken Momo (Steam / Fried)", price: "Rs. 170 / Rs. 190" },
+    { name: "Veg Momo (Steam / Fried)", price: "Rs. 120 / Rs. 140" },
   ];
 
   return (
@@ -88,7 +88,7 @@ const PatanBranch = () => {
                 <Star className="fill-current" size={20} />
                 <Star className="fill-current" size={20} />
                 <Star className="fill-current" size={20} />
-                <span className="text-gray-600 ml-2">4.8/5 (320+ reviews)</span>
+                <span className="text-gray-600 ml-2">4.8/5 (1000+ reviews)</span>
               </div>
             </div>
             <div>

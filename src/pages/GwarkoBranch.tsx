@@ -2,7 +2,7 @@ import { MapPin, Phone, Clock, Star } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const PokharaBranch = () => {
+const GwarkoBranch = () => {
   const galleryImages = [
     "https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?w=400&h=300&fit=crop",
     "https://images.unsplash.com/photo-1496412705862-e0088f16f791?w=400&h=300&fit=crop",
@@ -13,9 +13,9 @@ const PokharaBranch = () => {
   ];
 
   const menuItems = [
-    { name: "Buff Momo", price: "Rs. 180" },
-    { name: "Chicken Momo", price: "Rs. 160" },
-    { name: "Veg Momo", price: "Rs. 140" },
+    { name: "Buff Momo", price: "Rs. 150" },
+    { name: "Chicken Momo", price: "Rs. 170" },
+    { name: "Veg Momo", price: "Rs. 120" },
   ];
 
   return (
@@ -84,13 +84,13 @@ const PokharaBranch = () => {
                 <Star className="fill-current" size={20} />
                 <Star className="fill-current" size={20} />
                 <Star className="fill-current" size={20} />
-                <span className="text-gray-600 ml-2">4.8/5 (450+ reviews)</span>
+                <span className="text-gray-600 ml-2">4.7/5 (450+ reviews)</span>
               </div>
             </div>
             <div>
               <img
                 src="https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?w=600&h=400&fit=crop"
-                alt="Pokhara Branch with Lake View"
+                alt="Gwarko Branch"
                 className="w-full h-80 object-cover rounded-2xl shadow-lg"
               />
             </div>
@@ -173,4 +173,4 @@ const PokharaBranch = () => {
   );
 };
 
-export default PokharaBranch;
+export default GwarkoBranch;

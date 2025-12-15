@@ -24,7 +24,7 @@ const BranchSection = () => {
       location: "Patan Dhoka, Lalitpur",
       phone: "+977-1-4567891",
       image: patan,
-      hours: "10:00 AM - 8:00 PM",
+      hours: "11:00 AM - 8:30 PM",
       route: "/branch/patan"
     },
     {
@@ -51,7 +51,7 @@ const BranchSection = () => {
       location: "Putalisadak, Kathmandu",
       phone: "+977-56-567894", 
       image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&h=300&fit=crop",
-      hours: "11:00 AM - 6:30 PM",
+      hours: "11:00 AM - 6:00 PM",
       route: "/branch/putalisadak"
     },
     {
@@ -60,7 +60,7 @@ const BranchSection = () => {
       location: "Nayapati pipalbot, Jorpati, Ktm",
       phone: "+977-71-567895", 
       image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=300&fit=crop",
-      hours: "10:00 AM - 9:30 PM",
+      hours: "11:00 AM - 8:30 PM",
       route: "/branch/sundarijal"
     }
   ];

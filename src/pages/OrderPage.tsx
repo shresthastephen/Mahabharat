@@ -11,7 +11,7 @@ const OrderPage = () => {
       phone: "+977-1-4567890",
       image:
         "https://images.unsplash.com/photo-1460574283810-2aab119d8511?w=400&h=300&fit=crop",
-      hours: "10:00 AM - 8:30 PM",
+      hours: "10:00 AM - 9:00 PM",
       map: "https://maps.app.goo.gl/CXdekXE2FMTkG9Hr9",
     },
     {
@@ -21,7 +21,7 @@ const OrderPage = () => {
       phone: "+977-1-4567891",
       image:
         "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&h=300&fit=crop",
-      hours: "11:00 AM - 8:00 PM",
+      hours: "11:00 AM - 8:30 PM",
       map: "https://maps.app.goo.gl/q9Sm9F9W5VECrTQN6",
     },
     {
@@ -61,7 +61,7 @@ const OrderPage = () => {
       phone: "+977-61-567893",
       image:
         "https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?w=400&h=300&fit=crop",
-      hours: "10:30 AM - 9:30 PM",
+      hours: "11 AM - 8:30 PM",
       map: "https://maps.app.goo.gl/5XiTci456k9yBz298",
     },
   ];
@@ -81,7 +81,7 @@ const OrderPage = () => {
               </h1>
             </div>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Choose your nearest location and get fresh, hot momos delivered to
+              Choose your nearest location and get fresh, delicious momo delivered to
               your doorstep
             </p>
           </div>
@@ -182,7 +182,7 @@ const OrderPage = () => {
               </div>
               <h3 className="text-xl font-semibold mb-2">Quality Guaranteed</h3>
               <p className="text-green-100">
-                Same authentic taste and quality from all our branches
+                Same authentic taste and quality from our branches
               </p>
             </div>
             <div className="text-center">
@@ -191,7 +191,7 @@ const OrderPage = () => {
               </div>
               <h3 className="text-xl font-semibold mb-2">Easy Ordering</h3>
               <p className="text-green-100">
-                Simple online ordering system with real-time tracking
+                Contact the nearest branch
               </p>
             </div>
           </div>

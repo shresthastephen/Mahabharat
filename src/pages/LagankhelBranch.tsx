@@ -83,13 +83,13 @@ const LagankhelBranch = () => {
                 <Star className="fill-current" size={20} />
                 <Star className="fill-current" size={20} />
                 <Star className="fill-current" size={20} />
-                <span className="text-gray-600 ml-2">4.9/5 (500+ reviews)</span>
+                <span className="text-gray-600 ml-2">4.9/5 (1000+ reviews)</span>
               </div>
             </div>
             <div>
               <img
                 src="https://images.unsplash.com/photo-1460574283810-2aab119d8511?w=600&h=400&fit=crop"
-                alt="Thamel Branch Interior"
+                alt="Langankhel Branch "
                 className="w-full h-80 object-cover rounded-2xl shadow-lg"
               />
             </div>

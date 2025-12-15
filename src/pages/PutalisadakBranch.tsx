@@ -13,16 +13,12 @@ const PutalisadakBranch = () => {
   ];
 
   const menuItems = [
-    { name: "Steam Momos (Chicken)", price: "Rs. 180" },
-    { name: "Steam Momos (Buff)", price: "Rs. 160" },
-    { name: "Steam Momos (Veg)", price: "Rs. 140" },
-    { name: "Fried Momos (Chicken)", price: "Rs. 200" },
-    { name: "Fried Momos (Buff)", price: "Rs. 180" },
-    { name: "Jhol Momos (Chicken)", price: "Rs. 220" },
-    { name: "Newari Special Momos", price: "Rs. 280" },
-    { name: "Chow Mein (Chicken)", price: "Rs. 250" },
-    { name: "Thukpa (Chicken)", price: "Rs. 280" },
-    { name: "Sel Roti", price: "Rs. 120" },
+    { name: "Buff Momo (Steam / Fried)", price: "Rs. 150 / Rs. 170" },
+    { name: "Chicken Momo (Steam / Fried)", price: "Rs. 170 / Rs. 190" },
+    { name: "Veg Momo (Steam / Fried)", price: "Rs. 120 / Rs. 140" },
+    { name: "Sauage (Buff / Chicken)", price: "Rs. 40 / Rs. 60" },
+    { name: "Keema Aanda", price: "Rs. 80" },
+
   ];
 
   return (
@@ -93,13 +89,13 @@ const PutalisadakBranch = () => {
                 <Star className="fill-current" size={20} />
                 <Star className="fill-current" size={20} />
                 <Star className="fill-current" size={20} />
-                <span className="text-gray-600 ml-2">4.8/5 (320+ reviews)</span>
+                <span className="text-gray-600 ml-2">4.8/5 (500+ reviews)</span>
               </div>
             </div>
             <div>
               <img
                 src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&h=400&fit=crop"
-                alt="Patan Branch Interior"
+                alt="Putalisadak Branch"
                 className="w-full h-80 object-cover rounded-2xl shadow-lg"
               />
             </div>
@@ -162,7 +158,9 @@ const PutalisadakBranch = () => {
 
       <section className="py-16 bg-green-600 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Visit Our Putalisadak Branch!</h2>
+          <h2 className="text-3xl font-bold mb-4">
+            Visit Our Putalisadak Branch!
+          </h2>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-white text-green-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">

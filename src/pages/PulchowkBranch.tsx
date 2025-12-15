@@ -13,16 +13,16 @@ const BhaktapurBranch = () => {
   ];
 
   const menuItems = [
-    { name: "Steam Momos (Chicken)", price: "Rs. 180" },
-    { name: "Steam Momos (Buff)", price: "Rs. 160" },
-    { name: "Steam Momos (Veg)", price: "Rs. 140" },
-    { name: "Royal Heritage Momos", price: "Rs. 320" },
-    { name: "Fried Momos (Chicken)", price: "Rs. 200" },
-    { name: "Jhol Momos (Chicken)", price: "Rs. 220" },
-    { name: "Traditional Newari Momos", price: "Rs. 300" },
-    { name: "Chow Mein (Chicken)", price: "Rs. 250" },
-    { name: "Thukpa (Chicken)", price: "Rs. 280" },
-    { name: "King Curd (Juju Dhau)", price: "Rs. 180" },
+    { name: "Buff Momo (Steam)", price: "Rs. 150" },
+    { name: "Chicken Momo (Steam)", price: "Rs. 170" },
+    { name: "Veg Momo (Steam)", price: "Rs. 120" },
+    { name: "Khaja Set(Veg / Non-Veg)", price: "Rs. 90 / Rs. 120" },
+    { name: "Wai Wai (Soup / Fried)", price: "Rs. 120" },
+    { name: "Chowmein (Buff / Veg)", price: "Rs. 120 / Rs. 100 " },
+    { name: "Aanda Bann", price: "Rs. 70" },
+    { name: "Veg Momo (Steam)", price: "Rs. 120" },
+    { name: "Veg Momo (Steam)", price: "Rs. 120" },
+    { name: "Veg Momo (Steam)", price: "Rs. 120" },
   ];
 
   return (
@@ -95,13 +95,13 @@ const BhaktapurBranch = () => {
                 <Star className="fill-current" size={20} />
                 <Star className="fill-current" size={20} />
                 <Star className="fill-current" size={20} />
-                <span className="text-gray-600 ml-2">4.9/5 (280+ reviews)</span>
+                <span className="text-gray-600 ml-2">4.7/5 (280+ reviews)</span>
               </div>
             </div>
             <div>
               <img
                 src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=600&h=400&fit=crop"
-                alt="Bhaktapur Branch Interior"
+                alt="Pulchowk Branch "
                 className="w-full h-80 object-cover rounded-2xl shadow-lg"
               />
             </div>

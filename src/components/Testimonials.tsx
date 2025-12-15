@@ -5,7 +5,7 @@ const Testimonials = () => {
     {
       id: 1,
       name: "Denish Maharjan",
-      location: "Kathmandu",
+      location: "Patan",
       rating: 5,
       text: "Absolutely the best momo in Nepal! The Lagankhel branch never misses — consistently delicious and my all-time favorite.",
       image:
@@ -41,7 +41,7 @@ const Testimonials = () => {
     {
       id: 5,
       name: "Dipak Rai",
-      location: "Kathmandu",
+      location: "Kavre",
       rating: 5,
       text: "A weekly favorite of mine, and it never disappoints — consistently delicious food, fast service, and fair prices.",
       image:
@@ -127,7 +127,7 @@ const Testimonials = () => {
               <span className="text-2xl font-bold text-gray-800">4.7/5</span>
             </div>
             <p className="text-gray-600 mb-4">
-              Based on 500+ verified reviews across all our branches
+              Based on 1000+ verified reviews across all our branches
             </p>
           </div>
         </div>

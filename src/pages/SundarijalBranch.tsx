@@ -14,13 +14,9 @@ const SundarijalBranch = () => {
   ];
 
   const menuItems = [
-    { name: "Steam Momos (Chicken)", price: "Rs. 180" },
-    { name: "Steam Momos (Buff)", price: "Rs. 160" },
-    { name: "Steam Momos (Veg)", price: "Rs. 140" },
-    { name: "Fried Momos (Chicken)", price: "Rs. 200" },
-    { name: "Fried Momos (Buff)", price: "Rs. 180" },
-    { name: "Jhol Momos (Chicken)", price: "Rs. 220" },
-    { name: "Newari Special Momos", price: "Rs. 280" },
+    { name: "Buff Momo (Steam / Fried)", price: "Rs. 150 / Rs. 170" },
+    { name: "Chicken Momo (Steam / Fried)", price: "Rs. 170 / Rs. 190" },
+    { name: "Veg Momo (Steam / Fried)", price: "Rs. 120 / Rs. 140" },
     { name: "Chow Mein (Chicken)", price: "Rs. 250" },
     { name: "Thukpa (Chicken)", price: "Rs. 280" },
     { name: "Sel Roti", price: "Rs. 120" }
@@ -57,7 +53,7 @@ const SundarijalBranch = () => {
                 <Clock className="text-green-300" size={20} />
                 <div>
                   <div className="font-semibold">Hours</div>
-                  <div className="text-green-100">10:00 AM - 9:30 PM</div>
+                  <div className="text-green-100">10:00 AM - 8:30 PM</div>
                 </div>
               </div>
             </div>
@@ -71,14 +67,10 @@ const SundarijalBranch = () => {
             <div>
               <h2 className="text-3xl font-bold text-gray-800 mb-6">About Sundarijal Branch</h2>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Our Patan branch brings the authentic momo experience to the historic city of arts and crafts. 
-                Surrounded by ancient temples and traditional Newari architecture, this location offers a unique 
-                dining atmosphere that perfectly complements our traditional recipes.
+                Our Sundarijal branch .
               </p>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Popular among local families and cultural enthusiasts, our Patan branch specializes in 
-                traditional Newari-style momos alongside our classic varieties. The cozy ambiance and 
-                friendly service make it a perfect spot for intimate family gatherings.
+               abc
               </p>
               <div className="flex items-center gap-2 text-green-500">
                 <Star className="fill-current" size={20} />
@@ -86,13 +78,13 @@ const SundarijalBranch = () => {
                 <Star className="fill-current" size={20} />
                 <Star className="fill-current" size={20} />
                 <Star className="fill-current" size={20} />
-                <span className="text-gray-600 ml-2">4.8/5 (320+ reviews)</span>
+                <span className="text-gray-600 ml-2">4.7/5 (320+ reviews)</span>
               </div>
             </div>
             <div>
               <img 
                 src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&h=400&fit=crop"
-                alt="Patan Branch Interior"
+                alt="Sundarijal Branch"
                 className="w-full h-80 object-cover rounded-2xl shadow-lg"
               />
             </div>
