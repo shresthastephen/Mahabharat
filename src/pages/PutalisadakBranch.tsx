@@ -2,22 +2,29 @@ import { MapPin, Phone, Clock, Star } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+import putali from "../assets/putalisadak/putali.jpg"
+import putali1 from "../assets/putalisadak/putali1.jpg"
+import putali2 from "../assets/putalisadak/putali2.jpg"
+import putali3 from "../assets/putalisadak/putali3.jpg"
+import putali4 from "../assets/putalisadak/putali4.jpg"
+import putali5 from "../assets/putalisadak/putali5.jpg"
+import putali6 from "../assets/putalisadak/putali6.jpg"
+import putali7 from "../assets/putalisadak/putali7.jpg"
+import putali8 from "../assets/putalisadak/putali8.jpg"
+import putali9 from "../assets/putalisadak/putali9.jpg"
+
+
 const PutalisadakBranch = () => {
   const galleryImages = [
-    "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1496412705862-e0088f16f791?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1460574283810-2aab119d8511?w=400&h=300&fit=crop",
+    putali, putali1, putali2, putali3, putali4, putali5, putali6, putali7, putali8, putali9,
   ];
 
   const menuItems = [
     { name: "Buff Momo (Steam / Fried)", price: "Rs. 150 / Rs. 170" },
     { name: "Chicken Momo (Steam / Fried)", price: "Rs. 170 / Rs. 190" },
     { name: "Veg Momo (Steam / Fried)", price: "Rs. 120 / Rs. 140" },
-    { name: "Sauage (Buff / Chicken)", price: "Rs. 40 / Rs. 60" },
-    { name: "Keema Aanda", price: "Rs. 80" },
+    { name: "Sauage (Buff / Chicken)", price: "Rs. 40 / Rs. 50" },
+    { name: "Keema Aanda(Buff / Chicken)", price: "Rs. 80 / Rs. 100" },
 
   ];
 
@@ -94,7 +101,7 @@ const PutalisadakBranch = () => {
             </div>
             <div>
               <img
-                src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&h=400&fit=crop"
+                src={putali1}
                 alt="Putalisadak Branch"
                 className="w-full h-80 object-cover rounded-2xl shadow-lg"
               />

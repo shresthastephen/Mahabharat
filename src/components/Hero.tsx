@@ -1,6 +1,8 @@
 import { ArrowRight, Star } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
+import lagan1 from "../assets/lagankhel/lagan1.jpg"
+
 const Hero = () => {
   const navigate = useNavigate();
 
@@ -67,8 +69,8 @@ const Hero = () => {
             <div className="relative z-10 transform rotate-3 hover:rotate-0 transition-transform duration-300">
               <div className="bg-white rounded-3xl p-8 shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1496412705862-e0088f16f791?w=500&h=400&fit=crop"
-                  alt="Delicious Momo"
+                  src={lagan1}
+                  alt="momo"
                   className="w-full h-80 object-cover rounded-2xl"
                 />
                 <div className="mt-4 text-center">

@@ -2,14 +2,17 @@ import { MapPin, Phone, Clock, Star } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+import pul from "../assets/pulchowk/pul.jpg"
+import pul1 from "../assets/pulchowk/pul1..jpg"
+import pul2 from "../assets/pulchowk/pul2.jpg"
+import pul3 from "../assets/pulchowk/pul3.jpg"
+import pul4 from "../assets/pulchowk/pul4.jpg"
+import pul5 from "../assets/pulchowk/pul5.jpg"
+
+
 const BhaktapurBranch = () => {
   const galleryImages = [
-    "https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1496412705862-e0088f16f791?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&h=300&fit=crop",
+    pul, pul1, pul2, pul3, pul4, pul5,
   ];
 
   const menuItems = [
@@ -100,7 +103,7 @@ const BhaktapurBranch = () => {
             </div>
             <div>
               <img
-                src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=600&h=400&fit=crop"
+                src={pul}
                 alt="Pulchowk Branch "
                 className="w-full h-80 object-cover rounded-2xl shadow-lg"
               />

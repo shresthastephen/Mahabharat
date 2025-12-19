@@ -1,17 +1,21 @@
 
+import patan6 from "../assets/patan/patan6.jpg"
+import patan4 from "../assets/patan/patan4.jpg"
+
+
 const FeaturedMenu = () => {
   const menuItems = [
     {
       id: 1,
       name: "Buff Momo",
       description: "Traditional buffalo meat momo with authentic Nepalese flavors",
-      image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=300&h=200&fit=crop",
+      image: patan6,
     },
     {
       id: 2,
       name: "Chicken Momo",
       description: "Traditional steamed momo(dumplings) filled with seasoned chicken and fresh herbs",
-      image: "https://images.unsplash.com/photo-1496412705862-e0088f16f791?w=300&h=200&fit=crop",
+      image: patan4,
     },
     {
       id: 3,
@@ -40,7 +44,7 @@ const FeaturedMenu = () => {
                 <img
                   src={item.image}
                   alt={item.name}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-64 object-cover"
                 />
               </div>
               

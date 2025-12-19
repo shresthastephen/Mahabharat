@@ -1,16 +1,17 @@
 import { MapPin, Phone, Clock, Star } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import lagan from "../assets/lagankhel/lagan.jpg";
+import lagan1 from "../assets/lagankhel/lagan1.jpg";
+import lagan2 from "../assets/lagankhel/lagan2.jpg";
+import momo from "../assets/lagankhel/momo.jpg";
+import momo1 from "../assets/lagankhel/momo1.jpg";
+import momo2 from "../assets/lagankhel/momo2.jpg";
+
+import lagankhel from "../assets/lagankhel/lagankhel.jpg";
 
 const LagankhelBranch = () => {
-  const galleryImages = [
-    "https://images.unsplash.com/photo-1460574283810-2aab119d8511?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1496412705862-e0088f16f791?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&h=300&fit=crop",
-  ];
+  const galleryImages = [lagan, lagan1, lagan2, momo, momo1, momo2, lagankhel];
 
   const menuItems = [{ name: "Buff Momo", price: "Rs. 160" }];
 
@@ -83,12 +84,14 @@ const LagankhelBranch = () => {
                 <Star className="fill-current" size={20} />
                 <Star className="fill-current" size={20} />
                 <Star className="fill-current" size={20} />
-                <span className="text-gray-600 ml-2">4.9/5 (1000+ reviews)</span>
+                <span className="text-gray-600 ml-2">
+                  4.9/5 (1000+ reviews)
+                </span>
               </div>
             </div>
             <div>
               <img
-                src="https://images.unsplash.com/photo-1460574283810-2aab119d8511?w=600&h=400&fit=crop"
+                src={lagan}
                 alt="Langankhel Branch "
                 className="w-full h-80 object-cover rounded-2xl shadow-lg"
               />
@@ -156,8 +159,8 @@ const LagankhelBranch = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Visit Us Today!</h2>
           <p className="text-green-100 mb-8 max-w-2xl mx-auto">
-            Experience the authentic taste at our Lagankhel branch.
-            Perfect for families, friends, and food lovers.
+            Experience the authentic taste at our Lagankhel branch. Perfect for
+            families, friends, and food lovers.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-white text-green-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">

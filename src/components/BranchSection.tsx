@@ -2,8 +2,10 @@
 import { MapPin, Phone, Clock } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
-import lagankhel from "../assets/lagankhel/lagankhel.jpg"
+import lagan from "../assets/lagankhel/lagan.jpg"
 import patan from "../assets/patan/main.jpg"
+import pul from "../assets/pulchowk/pul.jpg"
+import putali from "../assets/putalisadak/putali.jpg"
 
 const BranchSection = () => {
   const navigate = useNavigate();
@@ -14,7 +16,7 @@ const BranchSection = () => {
       name: "Lagankhel Branch",
       location: "Lagankhel Branch",
       phone: "+977-1-4567890",
-      image: lagankhel,
+      image: lagan,
       hours: "10:00 AM - 9:00 PM",
       route: "/branch/lagankhel"
     },
@@ -41,7 +43,7 @@ const BranchSection = () => {
       name: "Pulchowk Branch",
       location: "Harihar Bhawan, Lalitpur",
       phone: "+977-61-567893", 
-      image: "https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?w=400&h=300&fit=crop",
+      image: pul,
       hours: "8:30 AM - 6:30 PM",
       route: "/branch/pulchowk"
     },
@@ -50,7 +52,7 @@ const BranchSection = () => {
       name: "Putalisadak Branch",
       location: "Putalisadak, Kathmandu",
       phone: "+977-56-567894", 
-      image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&h=300&fit=crop",
+      image: putali,
       hours: "11:00 AM - 6:00 PM",
       route: "/branch/putalisadak"
     },

@@ -2,14 +2,20 @@ import { MapPin, Phone, Clock, Star } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+import main from "../assets/patan/main.jpg"
+import patan1 from "../assets/patan/patan1.jpg"
+import patan2 from "../assets/patan/patan2.jpg"
+import patan3 from "../assets/patan/patan3.jpg"
+import patan4 from "../assets/patan/patan4.jpg"
+import patan5 from "../assets/patan/patan5.jpg"
+import patan6 from "../assets/patan/patan6.jpg"
+import patan7 from "../assets/patan/patan7.jpg"
+import patan8 from "../assets/patan/patan8.jpg"
+import patan9 from "../assets/patan/patan9.jpg"
+
 const PatanBranch = () => {
   const galleryImages = [
-    "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1496412705862-e0088f16f791?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1460574283810-2aab119d8511?w=400&h=300&fit=crop",
+    main, patan1, patan2, patan3,patan4, patan5, patan6, patan7, patan8, patan9,
   ];
 
   const menuItems = [
@@ -93,7 +99,7 @@ const PatanBranch = () => {
             </div>
             <div>
               <img
-                src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&h=400&fit=crop"
+                src={main}
                 alt="Patan Branch Interior"
                 className="w-full h-80 object-cover rounded-2xl shadow-lg"
               />
