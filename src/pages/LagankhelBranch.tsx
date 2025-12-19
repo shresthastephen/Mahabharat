@@ -7,11 +7,12 @@ import lagan2 from "../assets/lagankhel/lagan2.jpg";
 import momo from "../assets/lagankhel/momo.jpg";
 import momo1 from "../assets/lagankhel/momo1.jpg";
 import momo2 from "../assets/lagankhel/momo2.jpg";
+import lagancopy from "../assets/lagankhel/lagancopy.jpg"
 
 import lagankhel from "../assets/lagankhel/lagankhel.jpg";
 
 const LagankhelBranch = () => {
-  const galleryImages = [lagan, lagan1, lagan2, momo, momo1, momo2, lagankhel];
+  const galleryImages = [lagancopy, lagan1, lagan2, momo, momo1, momo2, lagankhel];
 
   const menuItems = [{ name: "Buff Momo", price: "Rs. 160" }];
 
@@ -163,12 +164,20 @@ const LagankhelBranch = () => {
             families, friends, and food lovers.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-green-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
+            <a
+              href="https://maps.app.goo.gl/QusbuQVEeU6E5HXb6"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-green-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors text-center"
+            >
               Get Directions
-            </button>
-            <button className="bg-green-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-400 transition-colors">
+            </a>
+            <a
+              href="tel:+9779800000000"
+              className="bg-green-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-400 transition-colors text-center"
+            >
               Order Now
-            </button>
+            </a>
           </div>
         </div>
       </section>

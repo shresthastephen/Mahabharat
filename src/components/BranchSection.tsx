@@ -3,9 +3,11 @@ import { MapPin, Phone, Clock } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 import lagan from "../assets/lagankhel/lagan.jpg"
+import lagancopy from "../assets/lagankhel/lagancopy.jpg"
 import patan from "../assets/patan/main.jpg"
 import pul from "../assets/pulchowk/pul.jpg"
-import putali from "../assets/putalisadak/putali.jpg"
+import putali from "../assets/putalisadak/putalimain.jpg"
+import gwa1 from "../assets/gwarko/gwa1.jpg"
 
 const BranchSection = () => {
   const navigate = useNavigate();
@@ -16,7 +18,7 @@ const BranchSection = () => {
       name: "Lagankhel Branch",
       location: "Lagankhel Branch",
       phone: "+977-1-4567890",
-      image: lagan,
+      image: lagancopy,
       hours: "10:00 AM - 9:00 PM",
       route: "/branch/lagankhel"
     },
@@ -34,7 +36,7 @@ const BranchSection = () => {
       name: "Gwarko Branch",
       location: "Gwarko, Lalitpur", 
       phone: "+977-1-4567892",
-      image: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=400&h=300&fit=crop",
+      image: gwa1,
       hours: "11:00 AM - 7:30 PM",
       route: "/branch/gwarko"
     },

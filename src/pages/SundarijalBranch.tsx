@@ -140,12 +140,20 @@ const SundarijalBranch = () => {
             Discover the cultural heritage of Patan while enjoying our delicious momos in a traditional setting.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-green-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
+            <a
+              href="https://maps.app.goo.gl/b8EVZJZ7wx1vRG526"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-green-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors text-center"
+            >
               Get Directions
-            </button>
-            <button className="bg-green-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-400 transition-colors">
+            </a>
+            <a
+              href="tel:+9779800000000"
+              className="bg-green-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-400 transition-colors text-center"
+            >
               Order Now
-            </button>
+            </a>
           </div>
         </div>
       </section>

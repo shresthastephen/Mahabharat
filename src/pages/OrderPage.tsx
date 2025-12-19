@@ -2,6 +2,11 @@ import { ShoppingBag, MapPin } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+import lagan from "../assets/lagankhel/lagan.jpg";
+import pul from "../assets/pulchowk/pul.jpg"
+import putali from "../assets/putalisadak/putali.jpg"
+import main from "../assets/patan/main.jpg"
+
 const OrderPage = () => {
   const branches = [
     {
@@ -9,8 +14,7 @@ const OrderPage = () => {
       name: "Lagankhel Branch",
       location: "Lagankhel, Lalitpur",
       phone: "+977-1-4567890",
-      image:
-        "https://images.unsplash.com/photo-1460574283810-2aab119d8511?w=400&h=300&fit=crop",
+      image: lagan,
       hours: "10:00 AM - 9:00 PM",
       map: "https://maps.app.goo.gl/CXdekXE2FMTkG9Hr9",
     },
@@ -19,8 +23,7 @@ const OrderPage = () => {
       name: "Patan Branch",
       location: "PatanDhoka, Lalitpur",
       phone: "+977-1-4567891",
-      image:
-        "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&h=300&fit=crop",
+      image: main,
       hours: "11:00 AM - 8:30 PM",
       map: "https://maps.app.goo.gl/q9Sm9F9W5VECrTQN6",
     },
@@ -39,8 +42,7 @@ const OrderPage = () => {
       name: "Pulchowk Branch",
       location: "Harihar Bhawan",
       phone: "+977-61-567893",
-      image:
-        "https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?w=400&h=300&fit=crop",
+      image:pul,
       hours: "8:00 AM - 6:30 PM",
       map: "https://maps.app.goo.gl/yJeykg4jCULyKTKz9",
     },
@@ -49,8 +51,7 @@ const OrderPage = () => {
       name: "Putalisadak Branch",
       location: "Putalisadak, Kathmandu",
       phone: "+977-1-4567892",
-      image:
-        "https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=400&h=300&fit=crop",
+      image:putali,
       hours: "11:00 AM - 6:00 PM",
       map: "https://maps.app.goo.gl/Bqbqyw7zcPcb92oz8",
     },
@@ -96,7 +97,7 @@ const OrderPage = () => {
                   <img
                     src={branch.image}
                     alt={branch.name}
-                    className="w-full h-48 object-cover"
+                    className="w-full h-80 object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                 </div>

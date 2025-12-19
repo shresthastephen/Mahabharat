@@ -2,14 +2,11 @@ import { MapPin, Phone, Clock, Star } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+import gwa1 from "../assets/gwarko/gwa1.jpg"
+
 const GwarkoBranch = () => {
   const galleryImages = [
-    "https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1496412705862-e0088f16f791?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&h=300&fit=crop",
+    gwa1,
   ];
 
   const menuItems = [
@@ -89,7 +86,7 @@ const GwarkoBranch = () => {
             </div>
             <div>
               <img
-                src="https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?w=600&h=400&fit=crop"
+                src={gwa1}
                 alt="Gwarko Branch"
                 className="w-full h-80 object-cover rounded-2xl shadow-lg"
               />
@@ -157,13 +154,21 @@ const GwarkoBranch = () => {
             Visit Our Gwarko Branch!
           </h2>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-green-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
+         <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="https://maps.app.goo.gl/kACbtU23G74cUAy48"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-green-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors text-center"
+            >
               Get Directions
-            </button>
-            <button className="bg-green-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-400 transition-colors">
+            </a>
+            <a
+              href="tel:+9779800000000"
+              className="bg-green-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-400 transition-colors text-center"
+            >
               Order Now
-            </button>
+            </a>
           </div>
         </div>
       </section>
