@@ -10,9 +10,9 @@ const GwarkoBranch = () => {
   ];
 
   const menuItems = [
-    { name: "Buff Momo", price: "Rs. 150" },
-    { name: "Chicken Momo", price: "Rs. 170" },
-    { name: "Veg Momo", price: "Rs. 120" },
+    { name: "Buff Momo", price: "Rs.150" },
+    { name: "Chicken Momo", price: "Rs.170" },
+    { name: "Veg Momo", price: "Rs.120" },
   ];
 
   return (
@@ -139,7 +139,7 @@ const GwarkoBranch = () => {
                 <img
                   src={image}
                   alt={`Gallery image ${index + 1}`}
-                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                  className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>

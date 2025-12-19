@@ -16,16 +16,14 @@ const BhaktapurBranch = () => {
   ];
 
   const menuItems = [
-    { name: "Buff Momo (Steam)", price: "Rs. 150" },
-    { name: "Chicken Momo (Steam)", price: "Rs. 170" },
-    { name: "Veg Momo (Steam)", price: "Rs. 120" },
-    { name: "Khaja Set(Veg / Non-Veg)", price: "Rs. 90 / Rs. 120" },
-    { name: "Wai Wai (Soup / Fried)", price: "Rs. 120" },
-    { name: "Chowmein (Buff / Veg)", price: "Rs. 120 / Rs. 100 " },
-    { name: "Aanda Bann", price: "Rs. 70" },
-    { name: "Veg Momo (Steam)", price: "Rs. 120" },
-    { name: "Veg Momo (Steam)", price: "Rs. 120" },
-    { name: "Veg Momo (Steam)", price: "Rs. 120" },
+    { name: "Buff Momo (Steam)", price: "Rs.150" },
+    { name: "Chicken Momo (Steam)", price: "Rs.170" },
+    { name: "Veg Momo (Steam)", price: "Rs.120" },
+    { name: "Khaja Set(Veg / Non-Veg)", price: "Rs.90 / Rs.120" },
+    { name: "Wai Wai (Soup / Fried)", price: "Rs.120" },
+    { name: "Chowmein (Buff / Veg)", price: "Rs.120 / Rs.100 " },
+    { name: "Aanda Bann", price: "Rs.70" },
+    { name: "abc", price: "Rs.0" },
   ];
 
   return (
@@ -156,7 +154,7 @@ const BhaktapurBranch = () => {
                 <img
                   src={image}
                   alt={`Gallery image ${index + 1}`}
-                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                  className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>

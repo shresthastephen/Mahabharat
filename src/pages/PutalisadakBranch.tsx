@@ -16,15 +16,15 @@ import putali9 from "../assets/putalisadak/putali9.jpg"
 
 const PutalisadakBranch = () => {
   const galleryImages = [
-    putali, putali1, putali2, putali3, putali4, putali5, putali6, putali7, putali9,
+     putali1, putali2, putali3, putali4, putali5, putali6, putali7, putali9,
   ];
 
   const menuItems = [
-    { name: "Buff Momo (Steam / Fried)", price: "Rs. 150 / Rs. 170" },
-    { name: "Chicken Momo (Steam / Fried)", price: "Rs. 170 / Rs. 190" },
-    { name: "Veg Momo (Steam / Fried)", price: "Rs. 120 / Rs. 140" },
-    { name: "Sauage (Buff / Chicken)", price: "Rs. 40 / Rs. 50" },
-    { name: "Keema Aanda(Buff / Chicken)", price: "Rs. 80 / Rs. 100" },
+    { name: "Buff Momo (Steam / Fried)", price: "Rs.150 / Rs.170" },
+    { name: "Chicken Momo (Steam / Fried)", price: "Rs.170 / Rs.190" },
+    { name: "Veg Momo (Steam / Fried)", price: "Rs.120 / Rs.140" },
+    { name: "Sauage (Buff / Chicken)", price: "Rs.40 / Rs.50" },
+    { name: "Keema Aanda(Buff / Chicken)", price: "Rs.80 / Rs.100" },
 
   ];
 
@@ -154,7 +154,7 @@ const PutalisadakBranch = () => {
                 <img
                   src={image}
                   alt={`Gallery image ${index + 1}`}
-                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                  className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>

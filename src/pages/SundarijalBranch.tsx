@@ -6,20 +6,14 @@ import Footer from '@/components/Footer';
 const SundarijalBranch = () => {
   const galleryImages = [
     "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1496412705862-e0088f16f791?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1460574283810-2aab119d8511?w=400&h=300&fit=crop"
+   
   ];
 
   const menuItems = [
-    { name: "Buff Momo (Steam / Fried)", price: "Rs. 150 / Rs. 170" },
-    { name: "Chicken Momo (Steam / Fried)", price: "Rs. 170 / Rs. 190" },
-    { name: "Veg Momo (Steam / Fried)", price: "Rs. 120 / Rs. 140" },
-    { name: "Chow Mein (Chicken)", price: "Rs. 250" },
-    { name: "Thukpa (Chicken)", price: "Rs. 280" },
-    { name: "Sel Roti", price: "Rs. 120" }
+    { name: "Buff Momo (Steam / Fried)", price: "Rs.150 / Rs.170" },
+    { name: "Chicken Momo (Steam / Fried)", price: "Rs.170 / Rs.190" },
+    { name: "Veg Momo (Steam / Fried)", price: "Rs.120 / Rs.140" },
+    { name: "abc", price: "Rs.0" }
   ];
 
   return (

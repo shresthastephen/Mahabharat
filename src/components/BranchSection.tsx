@@ -75,14 +75,14 @@ const BranchSection = () => {
   };
 
   return (
-    <section id="branches" className="py-20 bg-gray-50">
+    <section id="branches" className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4 brand-title font-nunito">
             Our Branches
           </h2>
           <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto font-inter">
-            Visit us at any of our convenient locations across Nepal for the authentic momo experience
+            Visit us at any of our convenient locations for the authentic momo experience
           </p>
         </div>
 

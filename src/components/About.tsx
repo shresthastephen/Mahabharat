@@ -29,7 +29,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-12 bg-white">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left content */}
@@ -105,11 +105,11 @@ const About = () => {
             </div>
 
             {/* Floating stats */}
-            <div className="absolute -bottom-8 -left-8 bg-teal-500 text-white p-6 rounded-2xl shadow-xl">
+            <div className="absolute -bottom-8 -left-2 bg-teal-500 text-white p-6 rounded-2xl shadow-xl">
               <div className="text-3xl font-bold">10+</div>
               <div className="text-teal-100 text-sm">Years Experience</div>
             </div>
-            <div className="absolute -top-8 -right-8 bg-emerald-600 text-white p-6 rounded-2xl shadow-xl">
+            <div className="absolute -top-8 -right-2 bg-emerald-600 text-white p-6 rounded-2xl shadow-xl">
               <div className="text-3xl font-bold">1000+</div>
               <div className="text-emerald-100 text-sm">Momo Daily</div>
             </div>

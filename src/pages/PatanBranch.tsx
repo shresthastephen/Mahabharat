@@ -15,13 +15,13 @@ import patan9 from "../assets/patan/patan9.jpg"
 
 const PatanBranch = () => {
   const galleryImages = [
-    main, patan1, patan2, patan3,patan4, patan5, patan6, patan7, patan8, patan9,
+   patan2, patan1, patan3,patan4, patan5, patan6, patan7, patan8, patan9,
   ];
 
   const menuItems = [
-    { name: "Buff Momo (Steam / Fried)", price: "Rs. 150 / Rs. 170" },
-    { name: "Chicken Momo (Steam / Fried)", price: "Rs. 170 / Rs. 190" },
-    { name: "Veg Momo (Steam / Fried)", price: "Rs. 120 / Rs. 140" },
+    { name: "Buff Momo (Steam / Fried)", price: "Rs.150 / Rs.170" },
+    { name: "Chicken Momo (Steam / Fried)", price: "Rs.170 / Rs.190" },
+    { name: "Veg Momo (Steam / Fried)", price: "Rs.120 / Rs.140" },
   ];
 
   return (
@@ -152,7 +152,7 @@ const PatanBranch = () => {
                 <img
                   src={image}
                   alt={`Gallery image ${index + 1}`}
-                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                  className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>

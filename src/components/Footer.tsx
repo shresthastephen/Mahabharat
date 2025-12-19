@@ -39,7 +39,7 @@ const Footer = () => {
 
   return (
     <footer id="contact" className="bg-gradient-to-r from-gray-800 to-gray-900 text-white border-t border-gray-700">
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 py-12">
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
           {/* Company Info */}
           <div className="space-y-6">
@@ -102,7 +102,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-gray-700 mt-12 pt-8">
+        <div className="border-t border-gray-700 mt-12 pt-8 ">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm font-inter">
               © 2024 Mahabharat MoMo | All rights reserved.

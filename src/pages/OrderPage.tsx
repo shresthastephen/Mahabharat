@@ -6,6 +6,7 @@ import lagan from "../assets/lagankhel/lagan.jpg";
 import pul from "../assets/pulchowk/pul.jpg"
 import putali from "../assets/putalisadak/putali.jpg"
 import main from "../assets/patan/main.jpg"
+import gwa1 from '../assets/gwarko/gwa1.jpg'
 
 const OrderPage = () => {
   const branches = [
@@ -32,8 +33,7 @@ const OrderPage = () => {
       name: "Gwarko Branch",
       location: "Gwarko, Lalitpur",
       phone: "+977-1-4567892",
-      image:
-        "https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=400&h=300&fit=crop",
+      image: gwa1,
       hours: "11:00 AM - 7:00 PM",
       map: "https://maps.app.goo.gl/bUWWxwx7Yoyb2CDFA",
     },
@@ -72,11 +72,10 @@ const OrderPage = () => {
       <Header />
 
       {/* Branches Section */}
-      <section className="py-16">
+      <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <div className="flex items-center justify-center gap-2 mb-4">
-              <ShoppingBag className="text-green-600" size={32} />
               <h1 className="text-4xl md:text-5xl font-bold text-gray-800">
                 Order From Our Branches
               </h1>
@@ -146,7 +145,7 @@ const OrderPage = () => {
                       className="flex-1 flex items-center justify-center gap-2 bg-gray-100 text-gray-700 px-4 py-3 rounded-lg hover:bg-gray-200 transition-colors font-semibold"
                     >
                       <MapPin size={16} />
-                      Get Directions
+                      Directions
                     </a>
                   </div>
                 </div>
@@ -157,7 +156,7 @@ const OrderPage = () => {
       </section>
 
       {/* Info Section */}
-      <section className="py-16 bg-green-600 text-white">
+      <section className="py-12 bg-green-600 text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Why Order From Us?</h2>

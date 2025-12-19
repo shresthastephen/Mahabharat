@@ -14,7 +14,7 @@ import lagankhel from "../assets/lagankhel/lagankhel.jpg";
 const LagankhelBranch = () => {
   const galleryImages = [lagancopy, lagan1, lagan2, momo, momo1, momo2, lagankhel];
 
-  const menuItems = [{ name: "Buff Momo", price: "Rs. 160" }];
+  const menuItems = [{ name: "Buff Momo", price: "Rs.160" }];
 
   return (
     <div className="min-h-screen">
@@ -146,7 +146,7 @@ const LagankhelBranch = () => {
                 <img
                   src={image}
                   alt={`Gallery image ${index + 1}`}
-                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                  className="w-full h-96 object-cover group-hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
